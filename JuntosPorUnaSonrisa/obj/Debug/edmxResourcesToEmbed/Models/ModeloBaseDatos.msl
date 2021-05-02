@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JuntosPorUnaSonrisaModelStoreContainer" CdmEntityContainer="BaseDatosEntities">
+    <EntitySetMapping Name="ANTECEDENTE_FAMILIAR">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_FAMILIAR)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_FAMILIAR">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_NOMBRE" ColumnName="ANT_NOMBRE" />
+          <ScalarProperty Name="ANT_FAMILIAR" ColumnName="ANT_FAMILIAR" />
+          <ScalarProperty Name="ANT_SANO" ColumnName="ANT_SANO" />
+          <ScalarProperty Name="ANT_ENFERMEDAD" ColumnName="ANT_ENFERMEDAD" />
+          <ScalarProperty Name="ANT_FALLECIDO" ColumnName="ANT_FALLECIDO" />
+          <ScalarProperty Name="ANT_CAUSA" ColumnName="ANT_CAUSA" />
+          <ScalarProperty Name="ANT_FUMA" ColumnName="ANT_FUMA" />
+          <ScalarProperty Name="ANT_TOMA" ColumnName="ANT_TOMA" />
+          <ScalarProperty Name="ANT_DROGA" ColumnName="ANT_DROGA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_NEUROPSICOLOGICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_NEUROPSICOLOGICO)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_NEUROPSICOLOGICO">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="NEU_CONDUCTACASA" ColumnName="NEU_CONDUCTACASA" />
+          <ScalarProperty Name="NEU_CCASAEDAD" ColumnName="NEU_CCASAEDAD" />
+          <ScalarProperty Name="NEU_CONDUCTAESCUELA" ColumnName="NEU_CONDUCTAESCUELA" />
+          <ScalarProperty Name="NEU_CESCUELAEDAD" ColumnName="NEU_CESCUELAEDAD" />
+          <ScalarProperty Name="NEU_APROVECHAMIENTO" ColumnName="NEU_APROVECHAMIENTO" />
+          <ScalarProperty Name="NEU_AEDAD" ColumnName="NEU_AEDAD" />
+          <ScalarProperty Name="NEU_PIERDEEQUILIBRIO" ColumnName="NEU_PIERDEEQUILIBRIO" />
+          <ScalarProperty Name="NEU_EQUILIBRIOEDAD" ColumnName="NEU_EQUILIBRIOEDAD" />
+          <ScalarProperty Name="NEU_DHABLAR" ColumnName="NEU_DHABLAR" />
+          <ScalarProperty Name="NEU_DHEDAD" ColumnName="NEU_DHEDAD" />
+          <ScalarProperty Name="NEU_CSUENO" ColumnName="NEU_CSUENO" />
+          <ScalarProperty Name="NEU_CSUENOEDAD" ColumnName="NEU_CSUENOEDAD" />
+          <ScalarProperty Name="NEU_DNOCHE" ColumnName="NEU_DNOCHE" />
+          <ScalarProperty Name="NEU_DNOCHEEDAD" ColumnName="NEU_DNOCHEEDAD" />
+          <ScalarProperty Name="NEU_DESMAYO" ColumnName="NEU_DESMAYO" />
+          <ScalarProperty Name="NEU_DESMAYOEDAD" ColumnName="NEU_DESMAYOEDAD" />
+          <ScalarProperty Name="NEU_VE" ColumnName="NEU_VE" />
+          <ScalarProperty Name="NEU_VEEDAD" ColumnName="NEU_VEEDAD" />
+          <ScalarProperty Name="NEU_OYE" ColumnName="NEU_OYE" />
+          <ScalarProperty Name="NEU_OYEEDAD" ColumnName="NEU_OYEEDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_NUTRICIONAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_NUTRICIONAL)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_NUTRICIONAL">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_NUT_PESO" ColumnName="ANT_NUT_PESO" />
+          <ScalarProperty Name="ANT_NUT_ESTATURA" ColumnName="ANT_NUT_ESTATURA" />
+          <ScalarProperty Name="ANT_NUT_IMC" ColumnName="ANT_NUT_IMC" />
+          <ScalarProperty Name="ANT_NUT_COMSOLIEDAD" ColumnName="ANT_NUT_COMSOLIEDAD" />
+          <ScalarProperty Name="ANT_NUT_TIPO_COMIDA" ColumnName="ANT_NUT_TIPO_COMIDA" />
+          <ScalarProperty Name="ANT_NUT_DIETA_ESPECIAL" ColumnName="ANT_NUT_DIETA_ESPECIAL" />
+          <ScalarProperty Name="ANT_NUT_TIPO_DIETA" ColumnName="ANT_NUT_TIPO_DIETA" />
+          <ScalarProperty Name="ANT_NUT_COMIDA" ColumnName="ANT_NUT_COMIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_ODONTO_FAMILIAR">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_ODONTO_FAMILIAR)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_ODONTO_FAMILIAR">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ALERGIAANTIBIOTICO" ColumnName="ALERGIAANTIBIOTICO" />
+          <ScalarProperty Name="ALERGIAANESTECIA" ColumnName="ALERGIAANESTECIA" />
+          <ScalarProperty Name="HEMORRAGIAS" ColumnName="HEMORRAGIAS" />
+          <ScalarProperty Name="VIH" ColumnName="VIH" />
+          <ScalarProperty Name="TUBERCULOSIS" ColumnName="TUBERCULOSIS" />
+          <ScalarProperty Name="ASMA" ColumnName="ASMA" />
+          <ScalarProperty Name="DIABETES" ColumnName="DIABETES" />
+          <ScalarProperty Name="HIPERTENCION" ColumnName="HIPERTENCION" />
+          <ScalarProperty Name="ENFCARDIACA" ColumnName="ENFCARDIACA" />
+          <ScalarProperty Name="ESPECIFIQUE" ColumnName="ESPECIFIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_PERINATAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_PERINATAL)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_PERINATAL">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_NUMERO_EMBARAZO" ColumnName="ANT_NUMERO_EMBARAZO" />
+          <ScalarProperty Name="ANT_EMBARAZO_MULTIPLE" ColumnName="ANT_EMBARAZO_MULTIPLE" />
+          <ScalarProperty Name="ANT_TOMA_MEDICAMENTOS" ColumnName="ANT_TOMA_MEDICAMENTOS" />
+          <ScalarProperty Name="ANT_QUE_MEDICAMENTOS" ColumnName="ANT_QUE_MEDICAMENTOS" />
+          <ScalarProperty Name="ANT_TOMA_VITAMINAS" ColumnName="ANT_TOMA_VITAMINAS" />
+          <ScalarProperty Name="ANT_QUE_VITAMINAS" ColumnName="ANT_QUE_VITAMINAS" />
+          <ScalarProperty Name="ANT_DURACION_EMBARAZO" ColumnName="ANT_DURACION_EMBARAZO" />
+          <ScalarProperty Name="ANT_FUMO_TOMO" ColumnName="ANT_FUMO_TOMO" />
+          <ScalarProperty Name="ANT_PARTO_NORMAL" ColumnName="ANT_PARTO_NORMAL" />
+          <ScalarProperty Name="ANT_OBSERVACION_PARTO" ColumnName="ANT_OBSERVACION_PARTO" />
+          <ScalarProperty Name="ANT_PESO" ColumnName="ANT_PESO" />
+          <ScalarProperty Name="ANT_TALLA" ColumnName="ANT_TALLA" />
+          <ScalarProperty Name="ANT_PERIMETRO_CEFALICO" ColumnName="ANT_PERIMETRO_CEFALICO" />
+          <ScalarProperty Name="ANT_TAMIZ_METABOLICO" ColumnName="ANT_TAMIZ_METABOLICO" />
+          <ScalarProperty Name="ANT_TAMIZ_AUDITIVO" ColumnName="ANT_TAMIZ_AUDITIVO" />
+          <ScalarProperty Name="ANT_PARTO_COMPLICACION" ColumnName="ANT_PARTO_COMPLICACION" />
+          <ScalarProperty Name="ANT_OBSERVACION_COMP_PARTO" ColumnName="ANT_OBSERVACION_COMP_PARTO" />
+          <ScalarProperty Name="ANT_TOMO_SENO_MATERNO" ColumnName="ANT_TOMO_SENO_MATERNO" />
+          <ScalarProperty Name="ANT_TIEMPO_SENO" ColumnName="ANT_TIEMPO_SENO" />
+          <ScalarProperty Name="ANT_TOMO_FORMULA" ColumnName="ANT_TOMO_FORMULA" />
+          <ScalarProperty Name="ANT_QUE_FORMULA" ColumnName="ANT_QUE_FORMULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_QUIRURGICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_QUIRURGICO)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_QUIRURGICO">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_QUIREFLUJO" ColumnName="ANT_QUIREFLUJO" />
+          <ScalarProperty Name="ANT_QUITIROIDEAS" ColumnName="ANT_QUITIROIDEAS" />
+          <ScalarProperty Name="ANT_QUIESTRENIMIENTO" ColumnName="ANT_QUIESTRENIMIENTO" />
+          <ScalarProperty Name="ANT_QUIDIARREA" ColumnName="ANT_QUIDIARREA" />
+          <ScalarProperty Name="ANT_QUINEUMONIA" ColumnName="ANT_QUINEUMONIA" />
+          <ScalarProperty Name="ANT_QUIBRONQUIOLITIS" ColumnName="ANT_QUIBRONQUIOLITIS" />
+          <ScalarProperty Name="ANT_QUICRUP" ColumnName="ANT_QUICRUP" />
+          <ScalarProperty Name="ANT_QUIINFEVISURINARIAS" ColumnName="ANT_QUIINFEVISURINARIAS" />
+          <ScalarProperty Name="ANT_QUIVARICELA" ColumnName="ANT_QUIVARICELA" />
+          <ScalarProperty Name="ANT_QUIESCARLATINA" ColumnName="ANT_QUIESCARLATINA" />
+          <ScalarProperty Name="ANT_QUIDOLORCABEZA" ColumnName="ANT_QUIDOLORCABEZA" />
+          <ScalarProperty Name="ANT_QUINERVIOCISMO" ColumnName="ANT_QUINERVIOCISMO" />
+          <ScalarProperty Name="ANT_QUICONVULCIONES" ColumnName="ANT_QUICONVULCIONES" />
+          <ScalarProperty Name="ANT_QUITRANSFUCIONES" ColumnName="ANT_QUITRANSFUCIONES" />
+          <ScalarProperty Name="ANT_QUIALERGIAS" ColumnName="ANT_QUIALERGIAS" />
+          <ScalarProperty Name="ANT_QUIFRACTURAS" ColumnName="ANT_QUIFRACTURAS" />
+          <ScalarProperty Name="ANT_QUIACCIDENTES" ColumnName="ANT_QUIACCIDENTES" />
+          <ScalarProperty Name="ANT_QUICANCER" ColumnName="ANT_QUICANCER" />
+          <ScalarProperty Name="ANT_HOSPITALIZACION" ColumnName="ANT_HOSPITALIZACION" />
+          <ScalarProperty Name="CIRUGIAS" ColumnName="CIRUGIAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRIGADA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.BRIGADA)">
+        <MappingFragment StoreEntitySet="BRIGADA">
+          <ScalarProperty Name="BRI_ID" ColumnName="BRI_ID" />
+          <ScalarProperty Name="BRI_NOMBRE" ColumnName="BRI_NOMBRE" />
+          <ScalarProperty Name="BRI_DIRECCION" ColumnName="BRI_DIRECCION" />
+          <ScalarProperty Name="BRI_TELEFONO" ColumnName="BRI_TELEFONO" />
+          <ScalarProperty Name="BRI_CORREO" ColumnName="BRI_CORREO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONSENTIMIENTO_INFORMADO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.CONSENTIMIENTO_INFORMADO)">
+        <MappingFragment StoreEntitySet="CONSENTIMIENTO_INFORMADO">
+          <ScalarProperty Name="ID_CONS_INFORMADO" ColumnName="ID_CONS_INFORMADO" />
+          <ScalarProperty Name="CONS_NOMBRE_INSTITUCION" ColumnName="CONS_NOMBRE_INSTITUCION" />
+          <ScalarProperty Name="CONS_NOMBRE_RESPONSABLE" ColumnName="CONS_NOMBRE_RESPONSABLE" />
+          <ScalarProperty Name="CONS_TELEFONO_RESPONSABLE" ColumnName="CONS_TELEFONO_RESPONSABLE" />
+          <ScalarProperty Name="CONS_EMAIL_RESPONSABLE" ColumnName="CONS_EMAIL_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONSULTA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.CONSULTA)">
+        <MappingFragment StoreEntitySet="CONSULTA">
+          <ScalarProperty Name="CONS_ID" ColumnName="CONS_ID" />
+          <ScalarProperty Name="CONS_FECHA" ColumnName="CONS_FECHA" />
+          <ScalarProperty Name="CONS_MOTIVO" ColumnName="CONS_MOTIVO" />
+          <ScalarProperty Name="CONS_DIAGNOSTICO" ColumnName="CONS_DIAGNOSTICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DESARROLLO_PSICOMOTOR">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.DESARROLLO_PSICOMOTOR)">
+        <MappingFragment StoreEntitySet="DESARROLLO_PSICOMOTOR">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="PSI_SOSTUVO_CABEZA" ColumnName="PSI_SOSTUVO_CABEZA" />
+          <ScalarProperty Name="PSI_SONRIO" ColumnName="PSI_SONRIO" />
+          <ScalarProperty Name="PSI_BALBUCEO" ColumnName="PSI_BALBUCEO" />
+          <ScalarProperty Name="PSI_SENTO" ColumnName="PSI_SENTO" />
+          <ScalarProperty Name="PSI_GATEO" ColumnName="PSI_GATEO" />
+          <ScalarProperty Name="PSI_CAMINO_AYUDA" ColumnName="PSI_CAMINO_AYUDA" />
+          <ScalarProperty Name="PSI_CAMINO_SOLO" ColumnName="PSI_CAMINO_SOLO" />
+          <ScalarProperty Name="PSI_DESEMPENHO_ESCOLAR" ColumnName="PSI_DESEMPENHO_ESCOLAR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIAGNOSTICO_BUCAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.DIAGNOSTICO_BUCAL)">
+        <MappingFragment StoreEntitySet="DIAGNOSTICO_BUCAL">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ID_DIAGNOSTICO" ColumnName="ID_DIAGNOSTICO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CIE" ColumnName="CIE" />
+          <ScalarProperty Name="PRE" ColumnName="PRE" />
+          <ScalarProperty Name="DEF" ColumnName="DEF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESPECIALIDAD">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ESPECIALIDAD)">
+        <MappingFragment StoreEntitySet="ESPECIALIDAD">
+          <ScalarProperty Name="TCON_ID" ColumnName="TCON_ID" />
+          <ScalarProperty Name="TCON_NOMBRE" ColumnName="TCON_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXA_SYS_ESTOMATOGMATICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.EXA_SYS_ESTOMATOGMATICO)">
+        <MappingFragment StoreEntitySet="EXA_SYS_ESTOMATOGMATICO">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="LABIOS" ColumnName="LABIOS" />
+          <ScalarProperty Name="MEJILLAS" ColumnName="MEJILLAS" />
+          <ScalarProperty Name="MAXILAR_SUPERIOR" ColumnName="MAXILAR_SUPERIOR" />
+          <ScalarProperty Name="MAXILAR_INFERIOR" ColumnName="MAXILAR_INFERIOR" />
+          <ScalarProperty Name="LENGUA" ColumnName="LENGUA" />
+          <ScalarProperty Name="PALADAR" ColumnName="PALADAR" />
+          <ScalarProperty Name="PISO" ColumnName="PISO" />
+          <ScalarProperty Name="CARRILLOS" ColumnName="CARRILLOS" />
+          <ScalarProperty Name="GLANDULAS_SALIVALES" ColumnName="GLANDULAS_SALIVALES" />
+          <ScalarProperty Name="ORO_FARINGE" ColumnName="ORO_FARINGE" />
+          <ScalarProperty Name="ATM" ColumnName="ATM" />
+          <ScalarProperty Name="GANGLIOS" ColumnName="GANGLIOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXPLORACION_FISICA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.EXPLORACION_FISICA)">
+        <MappingFragment StoreEntitySet="EXPLORACION_FISICA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="EXPFIS_TA" ColumnName="EXPFIS_TA" />
+          <ScalarProperty Name="EXPFIS_TEMPERATURA" ColumnName="EXPFIS_TEMPERATURA" />
+          <ScalarProperty Name="EXPFIS_FRECUENCARD" ColumnName="EXPFIS_FRECUENCARD" />
+          <ScalarProperty Name="EXPFIS_PULSO" ColumnName="EXPFIS_PULSO" />
+          <ScalarProperty Name="EXPFIS_RESPIRATORIA" ColumnName="EXPFIS_RESPIRATORIA" />
+          <ScalarProperty Name="EXPFIS_CABEZA" ColumnName="EXPFIS_CABEZA" />
+          <ScalarProperty Name="EXPFIS_CUELLO" ColumnName="EXPFIS_CUELLO" />
+          <ScalarProperty Name="EXPFIS_TORAX" ColumnName="EXPFIS_TORAX" />
+          <ScalarProperty Name="EXPFIS_ABDOMEN" ColumnName="EXPFIS_ABDOMEN" />
+          <ScalarProperty Name="EXPFIS_GENITALES" ColumnName="EXPFIS_GENITALES" />
+          <ScalarProperty Name="EXPFIS_NEUROLOGICO" ColumnName="EXPFIS_NEUROLOGICO" />
+          <ScalarProperty Name="EXPFIS_EXAMENRECTAL" ColumnName="EXPFIS_EXAMENRECTAL" />
+          <ScalarProperty Name="EXPFIS_PELVICO" ColumnName="EXPFIS_PELVICO" />
+          <ScalarProperty Name="EXPFIS_EXTREMIDADES" ColumnName="EXPFIS_EXTREMIDADES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FICHA_MEDICA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.FICHA_MEDICA)">
+        <MappingFragment StoreEntitySet="FICHA_MEDICA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FICHA_ODONTOLOGICA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.FICHA_ODONTOLOGICA)">
+        <MappingFragment StoreEntitySet="FICHA_ODONTOLOGICA">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="PERSONAINFOADICIONAL" ColumnName="PERSONAINFOADICIONAL" />
+          <ScalarProperty Name="MOTIVOCONSULTA" ColumnName="MOTIVOCONSULTA" />
+          <ScalarProperty Name="ENFERMEDADACTUAL" ColumnName="ENFERMEDADACTUAL" />
+          <ScalarProperty Name="EMBARAZO" ColumnName="EMBARAZO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FRECUENCIA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.FRECUENCIA)">
+        <MappingFragment StoreEntitySet="FRECUENCIA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="FRUTAS" ColumnName="FRUTAS" />
+          <ScalarProperty Name="VERDURAS" ColumnName="VERDURAS" />
+          <ScalarProperty Name="LECHEENTERA" ColumnName="LECHEENTERA" />
+          <ScalarProperty Name="LECHEDESLACTOSADA" ColumnName="LECHEDESLACTOSADA" />
+          <ScalarProperty Name="YOGURT" ColumnName="YOGURT" />
+          <ScalarProperty Name="YOGURTFRUTAS" ColumnName="YOGURTFRUTAS" />
+          <ScalarProperty Name="QUESO" ColumnName="QUESO" />
+          <ScalarProperty Name="QUESOA" ColumnName="QUESOA" />
+          <ScalarProperty Name="EMBUTIDOS" ColumnName="EMBUTIDOS" />
+          <ScalarProperty Name="HUEVO" ColumnName="HUEVO" />
+          <ScalarProperty Name="POLLO" ColumnName="POLLO" />
+          <ScalarProperty Name="RES" ColumnName="RES" />
+          <ScalarProperty Name="CERDO" ColumnName="CERDO" />
+          <ScalarProperty Name="MARISCOS" ColumnName="MARISCOS" />
+          <ScalarProperty Name="VISCERAS" ColumnName="VISCERAS" />
+          <ScalarProperty Name="LEGUMINOSAS" ColumnName="LEGUMINOSAS" />
+          <ScalarProperty Name="AGUA" ColumnName="AGUA" />
+          <ScalarProperty Name="BEBIDASA" ColumnName="BEBIDASA" />
+          <ScalarProperty Name="SNACKD" ColumnName="SNACKD" />
+          <ScalarProperty Name="SNACKS" ColumnName="SNACKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIAL_FICHA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIAL_FICHA)">
+        <MappingFragment StoreEntitySet="HISTORIAL_FICHA">
+          <ScalarProperty Name="ID_HISTORIAL" ColumnName="ID_HISTORIAL" />
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="FIC_MED_FECHA" ColumnName="FIC_MED_FECHA" />
+          <ScalarProperty Name="FICHAEXAMENLAVOR" ColumnName="FICHAEXAMENLAVOR" />
+          <ScalarProperty Name="FICHATERAPEUTA" ColumnName="FICHATERAPEUTA" />
+          <ScalarProperty Name="FICHADIAGNOSTICO" ColumnName="FICHADIAGNOSTICO" />
+          <ScalarProperty Name="FICHACOMENTARIO" ColumnName="FICHACOMENTARIO" />
+          <ScalarProperty Name="FICHACOMENTMEDICO" ColumnName="FICHACOMENTMEDICO" />
+          <ScalarProperty Name="FICHAPADECIMIENTOACT" ColumnName="FICHAPADECIMIENTOACT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIALFICHAODO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIALFICHAODO)">
+        <MappingFragment StoreEntitySet="HISTORIALFICHAODO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIALFICHASCEE">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIALFICHASCEE)">
+        <MappingFragment StoreEntitySet="HISTORIALFICHASCEE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIALUSUARIOS">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIALUSUARIOS)">
+        <MappingFragment StoreEntitySet="HISTORIALUSUARIOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HORARIO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HORARIO)">
+        <MappingFragment StoreEntitySet="HORARIO">
+          <ScalarProperty Name="HORA_ID" ColumnName="HORA_ID" />
+          <ScalarProperty Name="HORA_DIAS" ColumnName="HORA_DIAS" />
+          <ScalarProperty Name="HORA_INGRESO" ColumnName="HORA_INGRESO" />
+          <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INDICADORES_SALUDB">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.INDICADORES_SALUDB)">
+        <MappingFragment StoreEntitySet="INDICADORES_SALUDB">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="PD_16" ColumnName="PD_16" />
+          <ScalarProperty Name="PD_17" ColumnName="PD_17" />
+          <ScalarProperty Name="PD_55" ColumnName="PD_55" />
+          <ScalarProperty Name="PD_11" ColumnName="PD_11" />
+          <ScalarProperty Name="PD_21" ColumnName="PD_21" />
+          <ScalarProperty Name="PD_51" ColumnName="PD_51" />
+          <ScalarProperty Name="PD_26" ColumnName="PD_26" />
+          <ScalarProperty Name="PD_27" ColumnName="PD_27" />
+          <ScalarProperty Name="PD_65" ColumnName="PD_65" />
+          <ScalarProperty Name="PD_36" ColumnName="PD_36" />
+          <ScalarProperty Name="PD_37" ColumnName="PD_37" />
+          <ScalarProperty Name="PD_75" ColumnName="PD_75" />
+          <ScalarProperty Name="PD_31" ColumnName="PD_31" />
+          <ScalarProperty Name="PD_41" ColumnName="PD_41" />
+          <ScalarProperty Name="PD_71" ColumnName="PD_71" />
+          <ScalarProperty Name="PD_46" ColumnName="PD_46" />
+          <ScalarProperty Name="PD_47" ColumnName="PD_47" />
+          <ScalarProperty Name="PD_85" ColumnName="PD_85" />
+          <ScalarProperty Name="PLACA16_55" ColumnName="PLACA16_55" />
+          <ScalarProperty Name="PLACA11_51" ColumnName="PLACA11_51" />
+          <ScalarProperty Name="PLACA26_65" ColumnName="PLACA26_65" />
+          <ScalarProperty Name="PLACA36_75" ColumnName="PLACA36_75" />
+          <ScalarProperty Name="PLACA31_71" ColumnName="PLACA31_71" />
+          <ScalarProperty Name="PLACA46_85" ColumnName="PLACA46_85" />
+          <ScalarProperty Name="CALDULO16_55" ColumnName="CALDULO16_55" />
+          <ScalarProperty Name="CALCULO11_51" ColumnName="CALCULO11_51" />
+          <ScalarProperty Name="CALCULO26_65" ColumnName="CALCULO26_65" />
+          <ScalarProperty Name="CALCULO36_75" ColumnName="CALCULO36_75" />
+          <ScalarProperty Name="CALCULO31_71" ColumnName="CALCULO31_71" />
+          <ScalarProperty Name="CALCULO46_85" ColumnName="CALCULO46_85" />
+          <ScalarProperty Name="GINGIVITIS16_55" ColumnName="GINGIVITIS16_55" />
+          <ScalarProperty Name="GINGIVITIS11_55" ColumnName="GINGIVITIS11_55" />
+          <ScalarProperty Name="GINGIVITIS26_65" ColumnName="GINGIVITIS26_65" />
+          <ScalarProperty Name="GINGIVITIS36_75" ColumnName="GINGIVITIS36_75" />
+          <ScalarProperty Name="GINGIVITIS31_71" ColumnName="GINGIVITIS31_71" />
+          <ScalarProperty Name="GINGIVITIS46_85" ColumnName="GINGIVITIS46_85" />
+          <ScalarProperty Name="TOTALPLACA" ColumnName="TOTALPLACA" />
+          <ScalarProperty Name="TOTALCALCULO" ColumnName="TOTALCALCULO" />
+          <ScalarProperty Name="TOTALGINGIVITIS" ColumnName="TOTALGINGIVITIS" />
+          <ScalarProperty Name="ENF_PERIDONTAL" ColumnName="ENF_PERIDONTAL" />
+          <ScalarProperty Name="MAL_OCLUSION" ColumnName="MAL_OCLUSION" />
+          <ScalarProperty Name="FLOUROSIS" ColumnName="FLOUROSIS" />
+          <ScalarProperty Name="DC" ColumnName="DC" />
+          <ScalarProperty Name="DP" ColumnName="DP" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="E" ColumnName="E" />
+          <ScalarProperty Name="O" ColumnName="O" />
+          <ScalarProperty Name="TOTALCPO" ColumnName="TOTALCPO" />
+          <ScalarProperty Name="TOTALCEO" ColumnName="TOTALCEO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INT_APARATO_SISTEMA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.INT_APARATO_SISTEMA)">
+        <MappingFragment StoreEntitySet="INT_APARATO_SISTEMA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="APA_DIGESTIVO" ColumnName="APA_DIGESTIVO" />
+          <ScalarProperty Name="APA_DIGESTIVOESPECF" ColumnName="APA_DIGESTIVOESPECF" />
+          <ScalarProperty Name="APA_CARDIOVASCULAR" ColumnName="APA_CARDIOVASCULAR" />
+          <ScalarProperty Name="APA_CARDIOESPECIF" ColumnName="APA_CARDIOESPECIF" />
+          <ScalarProperty Name="APA_PULMONAR" ColumnName="APA_PULMONAR" />
+          <ScalarProperty Name="APA_PULMONARESPECIF" ColumnName="APA_PULMONARESPECIF" />
+          <ScalarProperty Name="APA_ENDOCRINO" ColumnName="APA_ENDOCRINO" />
+          <ScalarProperty Name="APA_ENDOCRINOESPECIF" ColumnName="APA_ENDOCRINOESPECIF" />
+          <ScalarProperty Name="APA_URINARIO" ColumnName="APA_URINARIO" />
+          <ScalarProperty Name="APA_URINARIOESPECIF" ColumnName="APA_URINARIOESPECIF" />
+          <ScalarProperty Name="APA_GENITAL" ColumnName="APA_GENITAL" />
+          <ScalarProperty Name="APA_GENITALESPECIF" ColumnName="APA_GENITALESPECIF" />
+          <ScalarProperty Name="APA_GINECOLOMENARCA" ColumnName="APA_GINECOLOMENARCA" />
+          <ScalarProperty Name="APA_GINECOLOFUM" ColumnName="APA_GINECOLOFUM" />
+          <ScalarProperty Name="APA_GINECOLORITMO" ColumnName="APA_GINECOLORITMO" />
+          <ScalarProperty Name="APA_GINECOLOESPECIF" ColumnName="APA_GINECOLOESPECIF" />
+          <ScalarProperty Name="APA_MUSCOESQUELATICO" ColumnName="APA_MUSCOESQUELATICO" />
+          <ScalarProperty Name="APA_MESQUELEESPECIF" ColumnName="APA_MESQUELEESPECIF" />
+          <ScalarProperty Name="APA_NERVIOSO" ColumnName="APA_NERVIOSO" />
+          <ScalarProperty Name="APA_NERVIOSOESPECIF" ColumnName="APA_NERVIOSOESPECIF" />
+          <ScalarProperty Name="APA_PSIQUIATRICO" ColumnName="APA_PSIQUIATRICO" />
+          <ScalarProperty Name="APA_PSIQUIATRICOESPECIF" ColumnName="APA_PSIQUIATRICOESPECIF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.MEDICO)">
+        <MappingFragment StoreEntitySet="MEDICO">
+          <ScalarProperty Name="MED_ID" ColumnName="MED_ID" />
+          <ScalarProperty Name="HORA_ID" ColumnName="HORA_ID" />
+          <ScalarProperty Name="TCON_ID" ColumnName="TCON_ID" />
+          <ScalarProperty Name="MED_NOMBRE" ColumnName="MED_NOMBRE" />
+          <ScalarProperty Name="MED_APELLIDO" ColumnName="MED_APELLIDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ODONTOGRAMA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ODONTOGRAMA)">
+        <MappingFragment StoreEntitySet="ODONTOGRAMA">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="IDDIENTE" ColumnName="IDDIENTE" />
+          <ScalarProperty Name="NDIENTE" ColumnName="NDIENTE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ENFERMEDAD" ColumnName="ENFERMEDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.PERSONA)">
+        <MappingFragment StoreEntitySet="PERSONA">
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="PER_APELLIDO_PATERNO" ColumnName="PER_APELLIDO_PATERNO" />
+          <ScalarProperty Name="PER_APELLIDO_MATERNO" ColumnName="PER_APELLIDO_MATERNO" />
+          <ScalarProperty Name="PER_NOMBRES" ColumnName="PER_NOMBRES" />
+          <ScalarProperty Name="PER_EDAD" ColumnName="PER_EDAD" />
+          <ScalarProperty Name="PER_SEXO" ColumnName="PER_SEXO" />
+          <ScalarProperty Name="PER_RELIGION" ColumnName="PER_RELIGION" />
+          <ScalarProperty Name="PER_MEDICO_TRATANTE" ColumnName="PER_MEDICO_TRATANTE" />
+          <ScalarProperty Name="PER_NOMBRE_MADRE" ColumnName="PER_NOMBRE_MADRE" />
+          <ScalarProperty Name="EDAD_MADRE" ColumnName="EDAD_MADRE" />
+          <ScalarProperty Name="PER_NOMBRE_PADRE" ColumnName="PER_NOMBRE_PADRE" />
+          <ScalarProperty Name="PER_EDAD_PADRE" ColumnName="PER_EDAD_PADRE" />
+          <ScalarProperty Name="PER_CEDULA" ColumnName="PER_CEDULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLANES_DIAGNOSTICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.PLANES_DIAGNOSTICO)">
+        <MappingFragment StoreEntitySet="PLANES_DIAGNOSTICO">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="BIOMETRIA" ColumnName="BIOMETRIA" />
+          <ScalarProperty Name="QUIMICA_SANGUINEA" ColumnName="QUIMICA_SANGUINEA" />
+          <ScalarProperty Name="RAYOS_X" ColumnName="RAYOS_X" />
+          <ScalarProperty Name="ESPECIFIQUE" ColumnName="ESPECIFIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGNOS_VITALES">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.SIGNOS_VITALES)">
+        <MappingFragment StoreEntitySet="SIGNOS_VITALES">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="PRESION_ARTERIAL" ColumnName="PRESION_ARTERIAL" />
+          <ScalarProperty Name="FRECUENCIA_CARDIACA" ColumnName="FRECUENCIA_CARDIACA" />
+          <ScalarProperty Name="TEMPERATURA" ColumnName="TEMPERATURA" />
+          <ScalarProperty Name="F_RESPIRATORIA" ColumnName="F_RESPIRATORIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_CONSULTA_ESPECIALIDAD">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.TIPO_CONSULTA_ESPECIALIDAD)">
+        <MappingFragment StoreEntitySet="TIPO_CONSULTA_ESPECIALIDAD">
+          <ScalarProperty Name="TCON_ID" ColumnName="TCON_ID" />
+          <ScalarProperty Name="TCON_NOMBRE" ColumnName="TCON_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRATAMIENTO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.TRATAMIENTO)">
+        <MappingFragment StoreEntitySet="TRATAMIENTO">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ID_SECION" ColumnName="ID_SECION" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="DIAGNOSTICO" ColumnName="DIAGNOSTICO" />
+          <ScalarProperty Name="PROCEDIMIENTOS" ColumnName="PROCEDIMIENTOS" />
+          <ScalarProperty Name="PRESCRIPCIONESA" ColumnName="PRESCRIPCIONESA" />
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="FIRMA" ColumnName="FIRMA" />
+          <ScalarProperty Name="ZONA" ColumnName="ZONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO_SIS">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.USUARIO_SIS)">
+        <MappingFragment StoreEntitySet="USUARIO_SIS">
+          <ScalarProperty Name="USR_ID" ColumnName="USR_ID" />
+          <ScalarProperty Name="USR_SECONDNAME" ColumnName="USR_SECONDNAME" />
+          <ScalarProperty Name="USR_APELLIDOP" ColumnName="USR_APELLIDOP" />
+          <ScalarProperty Name="USR_APELLIDOM" ColumnName="USR_APELLIDOM" />
+          <ScalarProperty Name="USR_CEDULA" ColumnName="USR_CEDULA" />
+          <ScalarProperty Name="USR_FIRSTNAME" ColumnName="USR_FIRSTNAME" />
+          <ScalarProperty Name="USR_ROLES" ColumnName="USR_ROLES" />
+          <ScalarProperty Name="USR_CONTRASENA" ColumnName="USR_CONTRASENA" />
+          <ScalarProperty Name="USR_ESTADO" ColumnName="USR_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VACUNA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.VACUNA)">
+        <MappingFragment StoreEntitySet="VACUNA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="VAC_TUBERCULOSIS" ColumnName="VAC_TUBERCULOSIS" />
+          <ScalarProperty Name="VAC_POLIO" ColumnName="VAC_POLIO" />
+          <ScalarProperty Name="VAC_POLIOCUANTAS" ColumnName="VAC_POLIOCUANTAS" />
+          <ScalarProperty Name="VAC_PENTAVALENTE" ColumnName="VAC_PENTAVALENTE" />
+          <ScalarProperty Name="VAC_PENTAVALENTECUANTAS" ColumnName="VAC_PENTAVALENTECUANTAS" />
+          <ScalarProperty Name="VAC_TRIPLEVIRAL" ColumnName="VAC_TRIPLEVIRAL" />
+          <ScalarProperty Name="VAC_TRIPLEVIRALCUANTAS" ColumnName="VAC_TRIPLEVIRALCUANTAS" />
+          <ScalarProperty Name="VAC_VARICELA" ColumnName="VAC_VARICELA" />
+          <ScalarProperty Name="VAC_NEUMOCOCOS" ColumnName="VAC_NEUMOCOCOS" />
+          <ScalarProperty Name="VAC_HEPATITIS" ColumnName="VAC_HEPATITIS" />
+          <ScalarProperty Name="VAC_INFLUENZA" ColumnName="VAC_INFLUENZA" />
+          <ScalarProperty Name="VAC_ROTAVIRUS" ColumnName="VAC_ROTAVIRUS" />
+          <ScalarProperty Name="VAC_OTRAS" ColumnName="VAC_OTRAS" />
+          <ScalarProperty Name="VAC_OTRASESPECIFIQUE" ColumnName="VAC_OTRASESPECIFIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VALORACION_FUNCIONAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.VALORACION_FUNCIONAL)">
+        <MappingFragment StoreEntitySet="VALORACION_FUNCIONAL">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="VAL_APOYO_ESPECIAL" ColumnName="VAL_APOYO_ESPECIAL" />
+          <ScalarProperty Name="VAL_AUDITIVO" ColumnName="VAL_AUDITIVO" />
+          <ScalarProperty Name="VAL_MOTOR" ColumnName="VAL_MOTOR" />
+          <ScalarProperty Name="VAL_VISUAL" ColumnName="VAL_VISUAL" />
+          <ScalarProperty Name="VAL_IDIOMA" ColumnName="VAL_IDIOMA" />
+          <ScalarProperty Name="VAL_OTRO" ColumnName="VAL_OTRO" />
+          <ScalarProperty Name="VAL_ESPECIFICACION" ColumnName="VAL_ESPECIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

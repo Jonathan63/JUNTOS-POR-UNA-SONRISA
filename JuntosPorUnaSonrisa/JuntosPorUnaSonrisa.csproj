@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21025EB9-FA6A-45C5-A56D-3AA00F47E529}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JuntosPorUnaSonrisa</RootNamespace>
+    <AssemblyName>JuntosPorUnaSonrisa</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.9\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.14\lib\net40\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.7.3\lib\net461\Rotativa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\Usuarios\ListarUsuarios.aspx.cs">
+      <DependentUpon>ListarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Usuarios\ListarUsuarios.aspx.designer.cs">
+      <DependentUpon>ListarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Usuarios\ProcesarUsuarios.aspx.cs">
+      <DependentUpon>ProcesarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Usuarios\ProcesarUsuarios.aspx.designer.cs">
+      <DependentUpon>ProcesarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANTECEDENTE_FAMILIAR.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANTECEDENTE_NEUROPSICOLOGICO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANTECEDENTE_NUTRICIONAL.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANTECEDENTE_ODONTO_FAMILIAR.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANTECEDENTE_PERINATAL.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANTECEDENTE_QUIRURGICO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BRIGADA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CONSENTIMIENTO_INFORMADO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CONSULTA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DESARROLLO_PSICOMOTOR.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DIAGNOSTICO_BUCAL.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ESPECIALIDAD.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EXA_SYS_ESTOMATOGMATICO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EXPLORACION_FISICA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FICHA_MEDICA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FICHA_ODONTOLOGICA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FRECUENCIA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HISTORIALFICHAODO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HISTORIALFICHASCEE.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HISTORIALUSUARIOS.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HISTORIAL_FICHA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HORARIO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INDICADORES_SALUDB.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INT_APARATO_SISTEMA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MEDICO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloBaseDatos.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBaseDatos.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloBaseDatos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloBaseDatos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBaseDatos.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ODONTOGRAMA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PERSONA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PLANES_DIAGNOSTICO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SIGNOS_VITALES.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TIPO_CONSULTA_ESPECIALIDAD.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TRATAMIENTO.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\USUARIO_SIS.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VACUNA.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VALORACION_FUNCIONAL.cs">
+      <DependentUpon>ModeloBaseDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publico\Nosotros.aspx.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publico\Nosotros.aspx.designer.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publico\Ubicanos.aspx.cs">
+      <DependentUpon>Ubicanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publico\Ubicanos.aspx.designer.cs">
+      <DependentUpon>Ubicanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedenteFamiliar.aspx.cs">
+      <DependentUpon>AntecedenteFamiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedenteFamiliar.aspx.designer.cs">
+      <DependentUpon>AntecedenteFamiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedenteNutricional.aspx.cs">
+      <DependentUpon>AntecedenteNutricional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedenteNutricional.aspx.designer.cs">
+      <DependentUpon>AntecedenteNutricional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedentePerinatal.aspx.cs">
+      <DependentUpon>AntecedentePerinatal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedentePerinatal.aspx.designer.cs">
+      <DependentUpon>AntecedentePerinatal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedenteQuirurgico.aspx.cs">
+      <DependentUpon>AntecedenteQuirurgico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedenteQuirurgico.aspx.designer.cs">
+      <DependentUpon>AntecedenteQuirurgico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedentesNeuropsicologico.aspx.cs">
+      <DependentUpon>AntecedentesNeuropsicologico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\AntecedentesNeuropsicologico.aspx.designer.cs">
+      <DependentUpon>AntecedentesNeuropsicologico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\Frecuencia.aspx.cs">
+      <DependentUpon>Frecuencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\Frecuencia.aspx.designer.cs">
+      <DependentUpon>Frecuencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\ListarAntecedentesFamiliares.aspx.cs">
+      <DependentUpon>ListarAntecedentesFamiliares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Antecedentes\ListarAntecedentesFamiliares.aspx.designer.cs">
+      <DependentUpon>ListarAntecedentesFamiliares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Brigada\Horarios_Especialidad.aspx.cs">
+      <DependentUpon>Horarios_Especialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Brigada\Horarios_Especialidad.aspx.designer.cs">
+      <DependentUpon>Horarios_Especialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Brigada\ListarEspecialidad.aspx.cs">
+      <DependentUpon>ListarEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Brigada\ListarEspecialidad.aspx.designer.cs">
+      <DependentUpon>ListarEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Brigada\ListarHorarios.aspx.cs">
+      <DependentUpon>ListarHorarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Brigada\ListarHorarios.aspx.designer.cs">
+      <DependentUpon>ListarHorarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Brigada\ListarMedico.aspx.cs">
+      <DependentUpon>ListarMedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Brigada\ListarMedico.aspx.designer.cs">
+      <DependentUpon>ListarMedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Brigada\Medico.aspx.cs">
+      <DependentUpon>Medico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Brigada\Medico.aspx.designer.cs">
+      <DependentUpon>Medico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\AntecedenteOdontologico.aspx.cs">
+      <DependentUpon>AntecedenteOdontologico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\AntecedenteOdontologico.aspx.designer.cs">
+      <DependentUpon>AntecedenteOdontologico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\Diagnostico.aspx.cs">
+      <DependentUpon>Diagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\Diagnostico.aspx.designer.cs">
+      <DependentUpon>Diagnostico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ExaSisEstomatognatico.aspx.cs">
+      <DependentUpon>ExaSisEstomatognatico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ExaSisEstomatognatico.aspx.designer.cs">
+      <DependentUpon>ExaSisEstomatognatico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\FichaOdontologica.aspx.cs">
+      <DependentUpon>FichaOdontologica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\FichaOdontologica.aspx.designer.cs">
+      <DependentUpon>FichaOdontologica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\IndicadoresSaludBucal.aspx.cs">
+      <DependentUpon>IndicadoresSaludBucal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\IndicadoresSaludBucal.aspx.designer.cs">
+      <DependentUpon>IndicadoresSaludBucal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarDiagnostico.aspx.cs">
+      <DependentUpon>ListarDiagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarDiagnostico.aspx.designer.cs">
+      <DependentUpon>ListarDiagnostico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarFichaOdontologica.aspx.cs">
+      <DependentUpon>ListarFichaOdontologica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarFichaOdontologica.aspx.designer.cs">
+      <DependentUpon>ListarFichaOdontologica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarOdontograma.aspx.cs">
+      <DependentUpon>ListarOdontograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarOdontograma.aspx.designer.cs">
+      <DependentUpon>ListarOdontograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarTratamiento.aspx.cs">
+      <DependentUpon>ListarTratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\ListarTratamiento.aspx.designer.cs">
+      <DependentUpon>ListarTratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\Odont.aspx.cs">
+      <DependentUpon>Odont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\Odont.aspx.designer.cs">
+      <DependentUpon>Odont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\PlanesDiagnostico.aspx.cs">
+      <DependentUpon>PlanesDiagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\PlanesDiagnostico.aspx.designer.cs">
+      <DependentUpon>PlanesDiagnostico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\SignosVitales.aspx.cs">
+      <DependentUpon>SignosVitales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\SignosVitales.aspx.designer.cs">
+      <DependentUpon>SignosVitales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\Tratamiento.aspx.cs">
+      <DependentUpon>Tratamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\FichaOdontologica\Tratamiento.aspx.designer.cs">
+      <DependentUpon>Tratamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\AparatoSistema.aspx.cs">
+      <DependentUpon>AparatoSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\AparatoSistema.aspx.designer.cs">
+      <DependentUpon>AparatoSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\DesarrolloSicomotor.aspx.cs">
+      <DependentUpon>DesarrolloSicomotor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\DesarrolloSicomotor.aspx.designer.cs">
+      <DependentUpon>DesarrolloSicomotor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\ExploracionFisica.aspx.cs">
+      <DependentUpon>ExploracionFisica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\ExploracionFisica.aspx.designer.cs">
+      <DependentUpon>ExploracionFisica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\FichaMedica.aspx.cs">
+      <DependentUpon>FichaMedica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\FichaMedica.aspx.designer.cs">
+      <DependentUpon>FichaMedica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\ListarFichaMedica.aspx.cs">
+      <DependentUpon>ListarFichaMedica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\ListarFichaMedica.aspx.designer.cs">
+      <DependentUpon>ListarFichaMedica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\Vacunas.aspx.cs">
+      <DependentUpon>Vacunas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\Vacunas.aspx.designer.cs">
+      <DependentUpon>Vacunas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\ValoracionFuncional.aspx.cs">
+      <DependentUpon>ValoracionFuncional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ficha_Medica\ValoracionFuncional.aspx.designer.cs">
+      <DependentUpon>ValoracionFuncional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Personas\Historial.aspx.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Personas\Historial.aspx.designer.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Personas\ListarPersonas.aspx.cs">
+      <DependentUpon>ListarPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Personas\ListarPersonas.aspx.designer.cs">
+      <DependentUpon>ListarPersonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Personas\ProcesarPersonas.aspx.cs">
+      <DependentUpon>ProcesarPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Personas\ProcesarPersonas.aspx.designer.cs">
+      <DependentUpon>ProcesarPersonas.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administracion\Usuarios\ListarUsuarios.aspx" />
+    <Content Include="Administracion\Usuarios\ProcesarUsuarios.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CSS\bootstrap-grid.css" />
+    <Content Include="CSS\bootstrap-grid.min.css" />
+    <Content Include="CSS\bootstrap-reboot.css" />
+    <Content Include="CSS\bootstrap-reboot.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\Normal.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Estilos\Normal.css" />
+    <Content Include="Estilos\sweetAlert.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\45.PNG" />
+    <Content Include="Imagenes\Add.png" />
+    <Content Include="Imagenes\aleatory.png" />
+    <Content Include="Imagenes\apply.ico" />
+    <Content Include="Imagenes\back.ico" />
+    <Content Include="Imagenes\carousel1.jfif" />
+    <Content Include="Imagenes\carousel2.jpg" />
+    <Content Include="Imagenes\carousel3.jpg" />
+    <Content Include="Imagenes\database.png" />
+    <Content Include="Imagenes\Delete.png" />
+    <Content Include="Imagenes\Dientes.png" />
+    <Content Include="Imagenes\download.png" />
+    <Content Include="Imagenes\Edit.png" />
+    <Content Include="Imagenes\Edit_profile.png" />
+    <Content Include="Imagenes\escudo-ucacue.png" />
+    <Content Include="Imagenes\escudo.jpg" />
+    <Content Include="Imagenes\Finaly.png" />
+    <Content Include="Imagenes\Home.png" />
+    <Content Include="Imagenes\LogoActualizado.png" />
+    <Content Include="Imagenes\mas.png" />
+    <Content Include="Imagenes\Modificar.png" />
+    <Content Include="Imagenes\nav.png" />
+    <Content Include="Imagenes\Next.png" />
+    <Content Include="Imagenes\Previous.png" />
+    <Content Include="Imagenes\search.png" />
+    <Content Include="Imagenes\user.png" />
+    <Content Include="Imagenes\useraccept.png" />
+    <Content Include="Imagenes\Usua.jpg" />
+    <Content Include="Imagenes\warning.png" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\responsive-nav.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Models\ModeloBaseDatos.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModeloBaseDatos.Context.cs</LastGenOutput>
+      <DependentUpon>ModeloBaseDatos.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ModeloBaseDatos.edmx.sql" />
+    <Content Include="Models\ModeloBaseDatos.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloBaseDatos.edmx</DependentUpon>
+      <LastGenOutput>ModeloBaseDatos.cs</LastGenOutput>
+    </Content>
+    <Content Include="Publico\Nosotros.aspx" />
+    <Content Include="Publico\Ubicanos.aspx" />
+    <Content Include="Rotativa\help-wkhtmltoimage.txt" />
+    <Content Include="Rotativa\help-wkhtmltopdf.txt" />
+    <Content Include="Rotativa\wkhtmltoimage.exe" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Principal.Master" />
+    <Content Include="CSS\bootstrap-grid.css.map" />
+    <Content Include="CSS\bootstrap-grid.min.css.map" />
+    <Content Include="CSS\bootstrap-reboot.css.map" />
+    <Content Include="CSS\bootstrap-reboot.min.css.map" />
+    <Content Include="CSS\bootstrap.css.map" />
+    <Content Include="CSS\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <EntityDeploy Include="Models\ModeloBaseDatos.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloBaseDatos.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModeloBaseDatos.edmx.diagram">
+      <DependentUpon>ModeloBaseDatos.edmx</DependentUpon>
+    </Content>
+    <Content Include="App_Browsers\qt.browser" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Sistema\Antecedentes\AntecedenteFamiliar.aspx" />
+    <Content Include="Sistema\Antecedentes\AntecedenteNutricional.aspx" />
+    <Content Include="Sistema\Antecedentes\AntecedentePerinatal.aspx" />
+    <Content Include="Sistema\Antecedentes\AntecedenteQuirurgico.aspx" />
+    <Content Include="Sistema\Antecedentes\AntecedentesNeuropsicologico.aspx" />
+    <Content Include="Sistema\Antecedentes\Frecuencia.aspx" />
+    <Content Include="Sistema\Antecedentes\ListarAntecedentesFamiliares.aspx" />
+    <Content Include="Sistema\Brigada\Horarios_Especialidad.aspx" />
+    <Content Include="Sistema\Brigada\ListarEspecialidad.aspx" />
+    <Content Include="Sistema\Brigada\ListarHorarios.aspx" />
+    <Content Include="Sistema\Brigada\ListarMedico.aspx" />
+    <Content Include="Sistema\Brigada\Medico.aspx" />
+    <Content Include="Sistema\FichaOdontologica\AntecedenteOdontologico.aspx" />
+    <Content Include="Sistema\FichaOdontologica\Diagnostico.aspx" />
+    <Content Include="Sistema\FichaOdontologica\ExaSisEstomatognatico.aspx" />
+    <Content Include="Sistema\FichaOdontologica\FichaOdontologica.aspx" />
+    <Content Include="Sistema\FichaOdontologica\IndicadoresSaludBucal.aspx" />
+    <Content Include="Sistema\FichaOdontologica\ListarDiagnostico.aspx" />
+    <Content Include="Sistema\FichaOdontologica\ListarFichaOdontologica.aspx" />
+    <Content Include="Sistema\FichaOdontologica\ListarOdontograma.aspx" />
+    <Content Include="Sistema\FichaOdontologica\ListarTratamiento.aspx" />
+    <Content Include="Sistema\FichaOdontologica\Odont.aspx" />
+    <Content Include="Sistema\FichaOdontologica\PlanesDiagnostico.aspx" />
+    <Content Include="Sistema\FichaOdontologica\SignosVitales.aspx" />
+    <Content Include="Sistema\FichaOdontologica\Tratamiento.aspx" />
+    <Content Include="Sistema\Ficha_Medica\AparatoSistema.aspx" />
+    <Content Include="Sistema\Ficha_Medica\DesarrolloSicomotor.aspx" />
+    <Content Include="Sistema\Ficha_Medica\ExploracionFisica.aspx" />
+    <Content Include="Sistema\Ficha_Medica\FichaMedica.aspx" />
+    <Content Include="Sistema\Ficha_Medica\ListarFichaMedica.aspx" />
+    <Content Include="Sistema\Ficha_Medica\Vacunas.aspx" />
+    <Content Include="Sistema\Ficha_Medica\ValoracionFuncional.aspx" />
+    <Content Include="Sistema\Personas\Historial.aspx" />
+    <Content Include="Sistema\Personas\ListarPersonas.aspx" />
+    <Content Include="Sistema\Personas\ProcesarPersonas.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Ficha.cshtml" />
+    <Content Include="Views\Home\GetAll.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53479</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53479/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

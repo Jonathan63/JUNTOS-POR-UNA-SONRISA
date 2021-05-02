@@ -1,0 +1,1783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="JuntosPorUnaSonrisaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="JuntosPorUnaSonrisaModelStoreContainer">
+    <EntitySet Name="ANTECEDENTE_FAMILIAR" EntityType="JuntosPorUnaSonrisaModel.Store.ANTECEDENTE_FAMILIAR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ANTECEDENTE_NEUROPSICOLOGICO" EntityType="JuntosPorUnaSonrisaModel.Store.ANTECEDENTE_NEUROPSICOLOGICO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ANTECEDENTE_NUTRICIONAL" EntityType="JuntosPorUnaSonrisaModel.Store.ANTECEDENTE_NUTRICIONAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ANTECEDENTE_ODONTO_FAMILIAR" EntityType="JuntosPorUnaSonrisaModel.Store.ANTECEDENTE_ODONTO_FAMILIAR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ANTECEDENTE_PERINATAL" EntityType="JuntosPorUnaSonrisaModel.Store.ANTECEDENTE_PERINATAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ANTECEDENTE_QUIRURGICO" EntityType="JuntosPorUnaSonrisaModel.Store.ANTECEDENTE_QUIRURGICO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BRIGADA" EntityType="JuntosPorUnaSonrisaModel.Store.BRIGADA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CONSENTIMIENTO_INFORMADO" EntityType="JuntosPorUnaSonrisaModel.Store.CONSENTIMIENTO_INFORMADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CONSULTA" EntityType="JuntosPorUnaSonrisaModel.Store.CONSULTA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DESARROLLO_PSICOMOTOR" EntityType="JuntosPorUnaSonrisaModel.Store.DESARROLLO_PSICOMOTOR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DIAGNOSTICO_BUCAL" EntityType="JuntosPorUnaSonrisaModel.Store.DIAGNOSTICO_BUCAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ESPECIALIDAD" EntityType="JuntosPorUnaSonrisaModel.Store.ESPECIALIDAD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EXA_SYS_ESTOMATOGMATICO" EntityType="JuntosPorUnaSonrisaModel.Store.EXA_SYS_ESTOMATOGMATICO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EXPLORACION_FISICA" EntityType="JuntosPorUnaSonrisaModel.Store.EXPLORACION_FISICA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FICHA_MEDICA" EntityType="JuntosPorUnaSonrisaModel.Store.FICHA_MEDICA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FICHA_ODONTOLOGICA" EntityType="JuntosPorUnaSonrisaModel.Store.FICHA_ODONTOLOGICA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FRECUENCIA" EntityType="JuntosPorUnaSonrisaModel.Store.FRECUENCIA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HISTORIAL_FICHA" EntityType="JuntosPorUnaSonrisaModel.Store.HISTORIAL_FICHA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HISTORIALFICHAODO" EntityType="JuntosPorUnaSonrisaModel.Store.HISTORIALFICHAODO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HISTORIALFICHASCEE" EntityType="JuntosPorUnaSonrisaModel.Store.HISTORIALFICHASCEE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HISTORIALUSUARIOS" EntityType="JuntosPorUnaSonrisaModel.Store.HISTORIALUSUARIOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HORARIO" EntityType="JuntosPorUnaSonrisaModel.Store.HORARIO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="INDICADORES_SALUDB" EntityType="JuntosPorUnaSonrisaModel.Store.INDICADORES_SALUDB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="INT_APARATO_SISTEMA" EntityType="JuntosPorUnaSonrisaModel.Store.INT_APARATO_SISTEMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MEDICO" EntityType="JuntosPorUnaSonrisaModel.Store.MEDICO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ODONTOGRAMA" EntityType="JuntosPorUnaSonrisaModel.Store.ODONTOGRAMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PERSONA" EntityType="JuntosPorUnaSonrisaModel.Store.PERSONA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PLANES_DIAGNOSTICO" EntityType="JuntosPorUnaSonrisaModel.Store.PLANES_DIAGNOSTICO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SIGNOS_VITALES" EntityType="JuntosPorUnaSonrisaModel.Store.SIGNOS_VITALES" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="JuntosPorUnaSonrisaModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPO_CONSULTA_ESPECIALIDAD" EntityType="JuntosPorUnaSonrisaModel.Store.TIPO_CONSULTA_ESPECIALIDAD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRATAMIENTO" EntityType="JuntosPorUnaSonrisaModel.Store.TRATAMIENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USUARIO_SIS" EntityType="JuntosPorUnaSonrisaModel.Store.USUARIO_SIS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VACUNA" EntityType="JuntosPorUnaSonrisaModel.Store.VACUNA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VALORACION_FUNCIONAL" EntityType="JuntosPorUnaSonrisaModel.Store.VALORACION_FUNCIONAL" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ANTECEDENTE_FAMILIAR">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+      <PropertyRef Name="ANT_NOMBRE" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="ANT_FAMILIAR" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ANT_NOMBRE" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ANT_SANO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_ENFERMEDAD" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="ANT_FALLECIDO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_CAUSA" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="ANT_FUMA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_TOMA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_DROGA" Type="char" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ANTECEDENTE_NEUROPSICOLOGICO">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="NEU_CONDUCTACASA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_CCASAEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_CONDUCTAESCUELA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_CESCUELAEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_APROVECHAMIENTO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_AEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_PIERDEEQUILIBRIO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_EQUILIBRIOEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_DHABLAR" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_DHEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_CSUENO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_CSUENOEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_DNOCHE" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_DNOCHEEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_DESMAYO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_DESMAYOEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_VE" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_VEEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="NEU_OYE" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="NEU_OYEEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ANTECEDENTE_NUTRICIONAL">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="ANT_NUT_PESO" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ANT_NUT_ESTATURA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ANT_NUT_IMC" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ANT_NUT_COMSOLIEDAD" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="ANT_NUT_TIPO_COMIDA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_NUT_DIETA_ESPECIAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_NUT_TIPO_DIETA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_NUT_COMIDA" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ANTECEDENTE_ODONTO_FAMILIAR">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="ALERGIAANTIBIOTICO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ALERGIAANESTECIA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="HEMORRAGIAS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="VIH" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="TUBERCULOSIS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ASMA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="DIABETES" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="HIPERTENCION" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ENFCARDIACA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ESPECIFIQUE" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ANTECEDENTE_PERINATAL">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="ANT_NUMERO_EMBARAZO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_EMBARAZO_MULTIPLE" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_TOMA_MEDICAMENTOS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_QUE_MEDICAMENTOS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_TOMA_VITAMINAS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_QUE_VITAMINAS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_DURACION_EMBARAZO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_FUMO_TOMO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_PARTO_NORMAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_OBSERVACION_PARTO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_PESO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_TALLA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_PERIMETRO_CEFALICO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_TAMIZ_METABOLICO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_TAMIZ_AUDITIVO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_PARTO_COMPLICACION" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_OBSERVACION_COMP_PARTO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_TOMO_SENO_MATERNO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_TIEMPO_SENO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ANT_TOMO_FORMULA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ANT_QUE_FORMULA" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ANTECEDENTE_QUIRURGICO">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="ANT_QUIREFLUJO" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUITIROIDEAS" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIESTRENIMIENTO" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIDIARREA" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUINEUMONIA" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIBRONQUIOLITIS" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUICRUP" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIINFEVISURINARIAS" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIVARICELA" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIESCARLATINA" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIDOLORCABEZA" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUINERVIOCISMO" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUICONVULCIONES" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUITRANSFUCIONES" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="ANT_QUIALERGIAS" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="ANT_QUIFRACTURAS" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="ANT_QUIACCIDENTES" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="ANT_QUICANCER" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="ANT_HOSPITALIZACION" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="CIRUGIAS" Type="varchar" Nullable="true" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="BRIGADA">
+    <Key>
+      <PropertyRef Name="BRI_ID" />
+    </Key>
+    <Property Name="BRI_ID" Type="int" Nullable="false" />
+    <Property Name="BRI_NOMBRE" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="BRI_DIRECCION" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="BRI_TELEFONO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="BRI_CORREO" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CONSENTIMIENTO_INFORMADO">
+    <Key>
+      <PropertyRef Name="ID_CONS_INFORMADO" />
+    </Key>
+    <Property Name="ID_CONS_INFORMADO" Type="int" Nullable="false" />
+    <Property Name="CONS_NOMBRE_INSTITUCION" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CONS_NOMBRE_RESPONSABLE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CONS_TELEFONO_RESPONSABLE" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="CONS_EMAIL_RESPONSABLE" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CONSULTA">
+    <Key>
+      <PropertyRef Name="CONS_ID" />
+    </Key>
+    <Property Name="CONS_ID" Type="int" Nullable="false" />
+    <Property Name="CONS_FECHA" Type="datetime" Nullable="true" />
+    <Property Name="CONS_MOTIVO" Type="varchar" Nullable="true" MaxLength="1000" />
+    <Property Name="CONS_DIAGNOSTICO" Type="varchar" Nullable="true" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="DESARROLLO_PSICOMOTOR">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="PSI_SOSTUVO_CABEZA" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_SONRIO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_BALBUCEO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_SENTO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_GATEO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_CAMINO_AYUDA" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_CAMINO_SOLO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PSI_DESEMPENHO_ESCOLAR" Type="char" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="DIAGNOSTICO_BUCAL">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+      <PropertyRef Name="ID_DIAGNOSTICO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="ID_DIAGNOSTICO" Type="int" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="CIE" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="PRE" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="DEF" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ESPECIALIDAD">
+    <Key>
+      <PropertyRef Name="TCON_ID" />
+    </Key>
+    <Property Name="TCON_ID" Type="int" Nullable="false" />
+    <Property Name="TCON_NOMBRE" Type="varchar" Nullable="true" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EXA_SYS_ESTOMATOGMATICO">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="LABIOS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="MEJILLAS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="MAXILAR_SUPERIOR" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="MAXILAR_INFERIOR" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="LENGUA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PALADAR" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PISO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CARRILLOS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="GLANDULAS_SALIVALES" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ORO_FARINGE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ATM" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="GANGLIOS" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EXPLORACION_FISICA">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="EXPFIS_TA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="EXPFIS_TEMPERATURA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="EXPFIS_FRECUENCARD" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="EXPFIS_PULSO" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="EXPFIS_RESPIRATORIA" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="EXPFIS_CABEZA" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_CUELLO" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_TORAX" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_ABDOMEN" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_GENITALES" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_NEUROLOGICO" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_EXAMENRECTAL" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_PELVICO" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EXPFIS_EXTREMIDADES" Type="varchar" Nullable="true" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="FICHA_MEDICA">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="ID_PERSONA" Type="char" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="FICHA_ODONTOLOGICA">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="ID_PERSONA" Type="char" Nullable="true" MaxLength="10" />
+    <Property Name="PERSONAINFOADICIONAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="MOTIVOCONSULTA" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="ENFERMEDADACTUAL" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="EMBARAZO" Type="char" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="FRECUENCIA">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="FRUTAS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="VERDURAS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="LECHEENTERA" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="LECHEDESLACTOSADA" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="YOGURT" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="YOGURTFRUTAS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="QUESO" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="QUESOA" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="EMBUTIDOS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="HUEVO" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="POLLO" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="RES" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="CERDO" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="MARISCOS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="VISCERAS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="LEGUMINOSAS" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="AGUA" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="BEBIDASA" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="SNACKD" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="SNACKS" Type="varchar" Nullable="true" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="HISTORIAL_FICHA">
+    <Key>
+      <PropertyRef Name="ID_HISTORIAL" />
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_HISTORIAL" Type="int" Nullable="false" />
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="FIC_MED_FECHA" Type="datetime" Nullable="true" />
+    <Property Name="FICHAEXAMENLAVOR" Type="varchar" Nullable="true" MaxLength="5000" />
+    <Property Name="FICHATERAPEUTA" Type="varchar" Nullable="true" MaxLength="5000" />
+    <Property Name="FICHADIAGNOSTICO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="FICHACOMENTARIO" Type="varchar" Nullable="true" MaxLength="5000" />
+    <Property Name="FICHACOMENTMEDICO" Type="varchar" Nullable="true" MaxLength="5000" />
+    <Property Name="FICHAPADECIMIENTOACT" Type="varchar" Nullable="true" MaxLength="5000" />
+  </EntityType>
+  <EntityType Name="HISTORIALFICHAODO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="USUARIO" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="FECHA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ACCION" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="NUMERO" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HISTORIALFICHASCEE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="USUARIO" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="FECHA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ACCION" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="NUMERO" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HISTORIALUSUARIOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="USUARIO" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="FECHA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ACCION" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="NUMERO" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HORARIO">
+    <Key>
+      <PropertyRef Name="HORA_ID" />
+    </Key>
+    <Property Name="HORA_ID" Type="int" Nullable="false" />
+    <Property Name="HORA_DIAS" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="HORA_INGRESO" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="HORA_SALIDA" Type="varchar" Nullable="true" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="INDICADORES_SALUDB">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="PD_16" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_17" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_55" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_11" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_21" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_51" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_26" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_27" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_65" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_36" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_37" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_75" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_31" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_41" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_71" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_46" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_47" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PD_85" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="PLACA16_55" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="PLACA11_51" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="PLACA26_65" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="PLACA36_75" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="PLACA31_71" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="PLACA46_85" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="CALDULO16_55" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="CALCULO11_51" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="CALCULO26_65" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="CALCULO36_75" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="CALCULO31_71" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="CALCULO46_85" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GINGIVITIS16_55" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GINGIVITIS11_55" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GINGIVITIS26_65" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GINGIVITIS36_75" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GINGIVITIS31_71" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GINGIVITIS46_85" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TOTALPLACA" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TOTALCALCULO" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TOTALGINGIVITIS" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="ENF_PERIDONTAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="MAL_OCLUSION" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="FLOUROSIS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="DC" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="DP" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="DO" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="C" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="E" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="O" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="TOTALCPO" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="TOTALCEO" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="INT_APARATO_SISTEMA">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="APA_DIGESTIVO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_DIGESTIVOESPECF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_CARDIOVASCULAR" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_CARDIOESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_PULMONAR" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_PULMONARESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_ENDOCRINO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_ENDOCRINOESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_URINARIO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_URINARIOESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_GENITAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_GENITALESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_GINECOLOMENARCA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="APA_GINECOLOFUM" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="APA_GINECOLORITMO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_GINECOLOESPECIF" Type="varchar" Nullable="true" MaxLength="200" />
+    <Property Name="APA_MUSCOESQUELATICO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_MESQUELEESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_NERVIOSO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_NERVIOSOESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="APA_PSIQUIATRICO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="APA_PSIQUIATRICOESPECIF" Type="varchar" Nullable="true" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="MEDICO">
+    <Key>
+      <PropertyRef Name="MED_ID" />
+      <PropertyRef Name="HORA_ID" />
+      <PropertyRef Name="TCON_ID" />
+    </Key>
+    <Property Name="MED_ID" Type="int" Nullable="false" />
+    <Property Name="HORA_ID" Type="int" Nullable="false" />
+    <Property Name="TCON_ID" Type="int" Nullable="false" />
+    <Property Name="MED_NOMBRE" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="MED_APELLIDO" Type="varchar" Nullable="true" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ODONTOGRAMA">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+      <PropertyRef Name="IDDIENTE" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="NDIENTE" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="DESCRIPCION" Type="varchar" Nullable="true" MaxLength="500" />
+    <Property Name="ENFERMEDAD" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="IDDIENTE" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERSONA">
+    <Key>
+      <PropertyRef Name="ID_PERSONA" />
+    </Key>
+    <Property Name="ID_PERSONA" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="PER_APELLIDO_PATERNO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_APELLIDO_MATERNO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_NOMBRES" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_EDAD" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_SEXO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="PER_RELIGION" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_MEDICO_TRATANTE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_NOMBRE_MADRE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="EDAD_MADRE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_NOMBRE_PADRE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_EDAD_PADRE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PER_CEDULA" Type="char" Nullable="true" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PLANES_DIAGNOSTICO">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="BIOMETRIA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="QUIMICA_SANGUINEA" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="RAYOS_X" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ESPECIFIQUE" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SIGNOS_VITALES">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="PRESION_ARTERIAL" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="FRECUENCIA_CARDIACA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="TEMPERATURA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="F_RESPIRATORIA" Type="varchar" Nullable="true" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TIPO_CONSULTA_ESPECIALIDAD">
+    <Key>
+      <PropertyRef Name="TCON_ID" />
+    </Key>
+    <Property Name="TCON_ID" Type="int" Nullable="false" />
+    <Property Name="TCON_NOMBRE" Type="char" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TRATAMIENTO">
+    <Key>
+      <PropertyRef Name="ID_ODONTO" />
+      <PropertyRef Name="ID_SECION" />
+    </Key>
+    <Property Name="ID_ODONTO" Type="int" Nullable="false" />
+    <Property Name="ID_SECION" Type="int" Nullable="false" />
+    <Property Name="FECHA" Type="datetime" Nullable="true" />
+    <Property Name="DIAGNOSTICO" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="PROCEDIMIENTOS" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="PRESCRIPCIONESA" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="CODIGO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="FIRMA" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="ZONA" Type="varchar" Nullable="true" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="USUARIO_SIS">
+    <Key>
+      <PropertyRef Name="USR_ID" />
+    </Key>
+    <Property Name="USR_ID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="USR_SECONDNAME" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="USR_APELLIDOP" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="USR_APELLIDOM" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="USR_CEDULA" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="USR_FIRSTNAME" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="USR_ROLES" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="USR_CONTRASENA" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="USR_ESTADO" Type="char" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="VACUNA">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="VAC_TUBERCULOSIS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_POLIO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_POLIOCUANTAS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="VAC_PENTAVALENTE" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_PENTAVALENTECUANTAS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="VAC_TRIPLEVIRAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_TRIPLEVIRALCUANTAS" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="VAC_VARICELA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_NEUMOCOCOS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_HEPATITIS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_INFLUENZA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_ROTAVIRUS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_OTRAS" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAC_OTRASESPECIFIQUE" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VALORACION_FUNCIONAL">
+    <Key>
+      <PropertyRef Name="ID_FICHA_MEDICA" />
+    </Key>
+    <Property Name="ID_FICHA_MEDICA" Type="int" Nullable="false" />
+    <Property Name="VAL_APOYO_ESPECIAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAL_AUDITIVO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAL_MOTOR" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAL_VISUAL" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAL_IDIOMA" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAL_OTRO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="VAL_ESPECIFICACION" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JuntosPorUnaSonrisaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BaseDatosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ANTECEDENTE_FAMILIAR" EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_FAMILIAR" />
+          <EntitySet Name="ANTECEDENTE_NEUROPSICOLOGICO" EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_NEUROPSICOLOGICO" />
+          <EntitySet Name="ANTECEDENTE_NUTRICIONAL" EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_NUTRICIONAL" />
+          <EntitySet Name="ANTECEDENTE_ODONTO_FAMILIAR" EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_ODONTO_FAMILIAR" />
+          <EntitySet Name="ANTECEDENTE_PERINATAL" EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_PERINATAL" />
+          <EntitySet Name="ANTECEDENTE_QUIRURGICO" EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_QUIRURGICO" />
+          <EntitySet Name="BRIGADA" EntityType="JuntosPorUnaSonrisaModel.BRIGADA" />
+          <EntitySet Name="CONSENTIMIENTO_INFORMADO" EntityType="JuntosPorUnaSonrisaModel.CONSENTIMIENTO_INFORMADO" />
+          <EntitySet Name="CONSULTA" EntityType="JuntosPorUnaSonrisaModel.CONSULTA" />
+          <EntitySet Name="DESARROLLO_PSICOMOTOR" EntityType="JuntosPorUnaSonrisaModel.DESARROLLO_PSICOMOTOR" />
+          <EntitySet Name="DIAGNOSTICO_BUCAL" EntityType="JuntosPorUnaSonrisaModel.DIAGNOSTICO_BUCAL" />
+          <EntitySet Name="ESPECIALIDAD" EntityType="JuntosPorUnaSonrisaModel.ESPECIALIDAD" />
+          <EntitySet Name="EXA_SYS_ESTOMATOGMATICO" EntityType="JuntosPorUnaSonrisaModel.EXA_SYS_ESTOMATOGMATICO" />
+          <EntitySet Name="EXPLORACION_FISICA" EntityType="JuntosPorUnaSonrisaModel.EXPLORACION_FISICA" />
+          <EntitySet Name="FICHA_MEDICA" EntityType="JuntosPorUnaSonrisaModel.FICHA_MEDICA" />
+          <EntitySet Name="FICHA_ODONTOLOGICA" EntityType="JuntosPorUnaSonrisaModel.FICHA_ODONTOLOGICA" />
+          <EntitySet Name="FRECUENCIA" EntityType="JuntosPorUnaSonrisaModel.FRECUENCIA" />
+          <EntitySet Name="HISTORIAL_FICHA" EntityType="JuntosPorUnaSonrisaModel.HISTORIAL_FICHA" />
+          <EntitySet Name="HISTORIALFICHAODO" EntityType="JuntosPorUnaSonrisaModel.HISTORIALFICHAODO" />
+          <EntitySet Name="HISTORIALFICHASCEE" EntityType="JuntosPorUnaSonrisaModel.HISTORIALFICHASCEE" />
+          <EntitySet Name="HISTORIALUSUARIOS" EntityType="JuntosPorUnaSonrisaModel.HISTORIALUSUARIOS" />
+          <EntitySet Name="HORARIO" EntityType="JuntosPorUnaSonrisaModel.HORARIO" />
+          <EntitySet Name="INDICADORES_SALUDB" EntityType="JuntosPorUnaSonrisaModel.INDICADORES_SALUDB" />
+          <EntitySet Name="INT_APARATO_SISTEMA" EntityType="JuntosPorUnaSonrisaModel.INT_APARATO_SISTEMA" />
+          <EntitySet Name="MEDICO" EntityType="JuntosPorUnaSonrisaModel.MEDICO" />
+          <EntitySet Name="ODONTOGRAMA" EntityType="JuntosPorUnaSonrisaModel.ODONTOGRAMA" />
+          <EntitySet Name="PERSONA" EntityType="JuntosPorUnaSonrisaModel.PERSONA" />
+          <EntitySet Name="PLANES_DIAGNOSTICO" EntityType="JuntosPorUnaSonrisaModel.PLANES_DIAGNOSTICO" />
+          <EntitySet Name="SIGNOS_VITALES" EntityType="JuntosPorUnaSonrisaModel.SIGNOS_VITALES" />
+          <EntitySet Name="sysdiagrams" EntityType="JuntosPorUnaSonrisaModel.sysdiagrams" />
+          <EntitySet Name="TIPO_CONSULTA_ESPECIALIDAD" EntityType="JuntosPorUnaSonrisaModel.TIPO_CONSULTA_ESPECIALIDAD" />
+          <EntitySet Name="TRATAMIENTO" EntityType="JuntosPorUnaSonrisaModel.TRATAMIENTO" />
+          <EntitySet Name="USUARIO_SIS" EntityType="JuntosPorUnaSonrisaModel.USUARIO_SIS" />
+          <EntitySet Name="VACUNA" EntityType="JuntosPorUnaSonrisaModel.VACUNA" />
+          <EntitySet Name="VALORACION_FUNCIONAL" EntityType="JuntosPorUnaSonrisaModel.VALORACION_FUNCIONAL" />
+        </EntityContainer>
+        <EntityType Name="ANTECEDENTE_FAMILIAR">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+            <PropertyRef Name="ANT_NOMBRE" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="ANT_FAMILIAR" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_NOMBRE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_SANO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_ENFERMEDAD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_FALLECIDO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_CAUSA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_FUMA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_TOMA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_DROGA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ANTECEDENTE_NEUROPSICOLOGICO">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="NEU_CONDUCTACASA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_CCASAEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_CONDUCTAESCUELA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_CESCUELAEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_APROVECHAMIENTO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_AEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_PIERDEEQUILIBRIO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_EQUILIBRIOEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_DHABLAR" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_DHEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_CSUENO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_CSUENOEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_DNOCHE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_DNOCHEEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_DESMAYO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_DESMAYOEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_VE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_VEEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NEU_OYE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NEU_OYEEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ANTECEDENTE_NUTRICIONAL">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="ANT_NUT_PESO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_NUT_ESTATURA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_NUT_IMC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_NUT_COMSOLIEDAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_NUT_TIPO_COMIDA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_NUT_DIETA_ESPECIAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_NUT_TIPO_DIETA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_NUT_COMIDA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ANTECEDENTE_ODONTO_FAMILIAR">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="ALERGIAANTIBIOTICO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ALERGIAANESTECIA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HEMORRAGIAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VIH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TUBERCULOSIS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ASMA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DIABETES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HIPERTENCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ENFCARDIACA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ESPECIFIQUE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ANTECEDENTE_PERINATAL">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="ANT_NUMERO_EMBARAZO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_EMBARAZO_MULTIPLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_TOMA_MEDICAMENTOS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_QUE_MEDICAMENTOS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_TOMA_VITAMINAS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_QUE_VITAMINAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_DURACION_EMBARAZO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_FUMO_TOMO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_PARTO_NORMAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_OBSERVACION_PARTO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_PESO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_TALLA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_PERIMETRO_CEFALICO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_TAMIZ_METABOLICO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_TAMIZ_AUDITIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_PARTO_COMPLICACION" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_OBSERVACION_COMP_PARTO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_TOMO_SENO_MATERNO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_TIEMPO_SENO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_TOMO_FORMULA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="ANT_QUE_FORMULA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ANTECEDENTE_QUIRURGICO">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="ANT_QUIREFLUJO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUITIROIDEAS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIESTRENIMIENTO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIDIARREA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUINEUMONIA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIBRONQUIOLITIS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUICRUP" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIINFEVISURINARIAS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIVARICELA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIESCARLATINA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIDOLORCABEZA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUINERVIOCISMO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUICONVULCIONES" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUITRANSFUCIONES" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIALERGIAS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIFRACTURAS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUIACCIDENTES" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_QUICANCER" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ANT_HOSPITALIZACION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CIRUGIAS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="BRIGADA">
+          <Key>
+            <PropertyRef Name="BRI_ID" />
+          </Key>
+          <Property Name="BRI_ID" Type="Int32" Nullable="false" />
+          <Property Name="BRI_NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BRI_DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BRI_TELEFONO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BRI_CORREO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CONSENTIMIENTO_INFORMADO">
+          <Key>
+            <PropertyRef Name="ID_CONS_INFORMADO" />
+          </Key>
+          <Property Name="ID_CONS_INFORMADO" Type="Int32" Nullable="false" />
+          <Property Name="CONS_NOMBRE_INSTITUCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CONS_NOMBRE_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CONS_TELEFONO_RESPONSABLE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CONS_EMAIL_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CONSULTA">
+          <Key>
+            <PropertyRef Name="CONS_ID" />
+          </Key>
+          <Property Name="CONS_ID" Type="Int32" Nullable="false" />
+          <Property Name="CONS_FECHA" Type="DateTime" Precision="0" />
+          <Property Name="CONS_MOTIVO" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="CONS_DIAGNOSTICO" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DESARROLLO_PSICOMOTOR">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="PSI_SOSTUVO_CABEZA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_SONRIO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_BALBUCEO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_SENTO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_GATEO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_CAMINO_AYUDA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_CAMINO_SOLO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PSI_DESEMPENHO_ESCOLAR" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DIAGNOSTICO_BUCAL">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+            <PropertyRef Name="ID_DIAGNOSTICO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_DIAGNOSTICO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CIE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PRE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DEF" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ESPECIALIDAD">
+          <Key>
+            <PropertyRef Name="TCON_ID" />
+          </Key>
+          <Property Name="TCON_ID" Type="Int32" Nullable="false" />
+          <Property Name="TCON_NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EXA_SYS_ESTOMATOGMATICO">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="LABIOS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MEJILLAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MAXILAR_SUPERIOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MAXILAR_INFERIOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LENGUA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PALADAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PISO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CARRILLOS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GLANDULAS_SALIVALES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORO_FARINGE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ATM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GANGLIOS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EXPLORACION_FISICA">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="EXPFIS_TA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_TEMPERATURA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_FRECUENCARD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_PULSO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_RESPIRATORIA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_CABEZA" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_CUELLO" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_TORAX" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_ABDOMEN" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_GENITALES" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_NEUROLOGICO" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_EXAMENRECTAL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_PELVICO" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EXPFIS_EXTREMIDADES" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FICHA_MEDICA">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="ID_PERSONA" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FICHA_ODONTOLOGICA">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_PERSONA" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="PERSONAINFOADICIONAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MOTIVOCONSULTA" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ENFERMEDADACTUAL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EMBARAZO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FRECUENCIA">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="FRUTAS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="VERDURAS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LECHEENTERA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LECHEDESLACTOSADA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="YOGURT" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="YOGURTFRUTAS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="QUESO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="QUESOA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EMBUTIDOS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="HUEVO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="POLLO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="RES" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CERDO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="MARISCOS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="VISCERAS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LEGUMINOSAS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="AGUA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="BEBIDASA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="SNACKD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="SNACKS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HISTORIAL_FICHA">
+          <Key>
+            <PropertyRef Name="ID_HISTORIAL" />
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_HISTORIAL" Type="Int32" Nullable="false" />
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="FIC_MED_FECHA" Type="DateTime" Precision="3" />
+          <Property Name="FICHAEXAMENLAVOR" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="FICHATERAPEUTA" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="FICHADIAGNOSTICO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FICHACOMENTARIO" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="FICHACOMENTMEDICO" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="FICHAPADECIMIENTOACT" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HISTORIALFICHAODO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="USUARIO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="FECHA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ACCION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NUMERO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HISTORIALFICHASCEE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="USUARIO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="FECHA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ACCION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NUMERO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HISTORIALUSUARIOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="USUARIO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="FECHA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ACCION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NUMERO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HORARIO">
+          <Key>
+            <PropertyRef Name="HORA_ID" />
+          </Key>
+          <Property Name="HORA_ID" Type="Int32" Nullable="false" />
+          <Property Name="HORA_DIAS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HORA_INGRESO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HORA_SALIDA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="INDICADORES_SALUDB">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="PD_16" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_17" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_55" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_11" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_21" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_51" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_26" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_27" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_65" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_36" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_37" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_75" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_31" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_41" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_71" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_46" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_47" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PD_85" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PLACA16_55" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="PLACA11_51" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="PLACA26_65" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="PLACA36_75" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="PLACA31_71" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="PLACA46_85" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CALDULO16_55" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CALCULO11_51" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CALCULO26_65" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CALCULO36_75" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CALCULO31_71" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CALCULO46_85" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GINGIVITIS16_55" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GINGIVITIS11_55" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GINGIVITIS26_65" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GINGIVITIS36_75" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GINGIVITIS31_71" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GINGIVITIS46_85" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TOTALPLACA" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TOTALCALCULO" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TOTALGINGIVITIS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="ENF_PERIDONTAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MAL_OCLUSION" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FLOUROSIS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DP" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DO" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="C" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="E" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="O" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TOTALCPO" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TOTALCEO" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="INT_APARATO_SISTEMA">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="APA_DIGESTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_DIGESTIVOESPECF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_CARDIOVASCULAR" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_CARDIOESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_PULMONAR" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_PULMONARESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_ENDOCRINO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_ENDOCRINOESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_URINARIO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_URINARIOESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_GENITAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_GENITALESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_GINECOLOMENARCA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APA_GINECOLOFUM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APA_GINECOLORITMO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_GINECOLOESPECIF" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="APA_MUSCOESQUELATICO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_MESQUELEESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_NERVIOSO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_NERVIOSOESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="APA_PSIQUIATRICO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="APA_PSIQUIATRICOESPECIF" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MEDICO">
+          <Key>
+            <PropertyRef Name="MED_ID" />
+            <PropertyRef Name="HORA_ID" />
+            <PropertyRef Name="TCON_ID" />
+          </Key>
+          <Property Name="MED_ID" Type="Int32" Nullable="false" />
+          <Property Name="HORA_ID" Type="Int32" Nullable="false" />
+          <Property Name="TCON_ID" Type="Int32" Nullable="false" />
+          <Property Name="MED_NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MED_APELLIDO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ODONTOGRAMA">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+            <PropertyRef Name="IDDIENTE" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="NDIENTE" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ENFERMEDAD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IDDIENTE" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PERSONA">
+          <Key>
+            <PropertyRef Name="ID_PERSONA" />
+          </Key>
+          <Property Name="ID_PERSONA" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="PER_APELLIDO_PATERNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_APELLIDO_MATERNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_NOMBRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_EDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_SEXO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="PER_RELIGION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_MEDICO_TRATANTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_NOMBRE_MADRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EDAD_MADRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_NOMBRE_PADRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_EDAD_PADRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PER_CEDULA" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PLANES_DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="BIOMETRIA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QUIMICA_SANGUINEA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RAYOS_X" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ESPECIFIQUE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SIGNOS_VITALES">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="PRESION_ARTERIAL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="FRECUENCIA_CARDIACA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TEMPERATURA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="F_RESPIRATORIA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TIPO_CONSULTA_ESPECIALIDAD">
+          <Key>
+            <PropertyRef Name="TCON_ID" />
+          </Key>
+          <Property Name="TCON_ID" Type="Int32" Nullable="false" />
+          <Property Name="TCON_NOMBRE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TRATAMIENTO">
+          <Key>
+            <PropertyRef Name="ID_ODONTO" />
+            <PropertyRef Name="ID_SECION" />
+          </Key>
+          <Property Name="ID_ODONTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_SECION" Type="Int32" Nullable="false" />
+          <Property Name="FECHA" Type="DateTime" Precision="0" />
+          <Property Name="DIAGNOSTICO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PROCEDIMIENTOS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PRESCRIPCIONESA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FIRMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ZONA" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="USUARIO_SIS">
+          <Key>
+            <PropertyRef Name="USR_ID" />
+          </Key>
+          <Property Name="USR_ID" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="USR_SECONDNAME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="USR_APELLIDOP" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="USR_APELLIDOM" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="USR_CEDULA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="USR_FIRSTNAME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="USR_ROLES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="USR_CONTRASENA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="USR_ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VACUNA">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="VAC_TUBERCULOSIS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_POLIO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_POLIOCUANTAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VAC_PENTAVALENTE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_PENTAVALENTECUANTAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VAC_TRIPLEVIRAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_TRIPLEVIRALCUANTAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VAC_VARICELA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_NEUMOCOCOS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_HEPATITIS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_INFLUENZA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_ROTAVIRUS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_OTRAS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAC_OTRASESPECIFIQUE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VALORACION_FUNCIONAL">
+          <Key>
+            <PropertyRef Name="ID_FICHA_MEDICA" />
+          </Key>
+          <Property Name="ID_FICHA_MEDICA" Type="Int32" Nullable="false" />
+          <Property Name="VAL_APOYO_ESPECIAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAL_AUDITIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAL_MOTOR" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAL_VISUAL" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAL_IDIOMA" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAL_OTRO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="VAL_ESPECIFICACION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JuntosPorUnaSonrisaModelStoreContainer" CdmEntityContainer="BaseDatosEntities">
+    <EntitySetMapping Name="ANTECEDENTE_FAMILIAR">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_FAMILIAR)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_FAMILIAR">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_NOMBRE" ColumnName="ANT_NOMBRE" />
+          <ScalarProperty Name="ANT_FAMILIAR" ColumnName="ANT_FAMILIAR" />
+          <ScalarProperty Name="ANT_SANO" ColumnName="ANT_SANO" />
+          <ScalarProperty Name="ANT_ENFERMEDAD" ColumnName="ANT_ENFERMEDAD" />
+          <ScalarProperty Name="ANT_FALLECIDO" ColumnName="ANT_FALLECIDO" />
+          <ScalarProperty Name="ANT_CAUSA" ColumnName="ANT_CAUSA" />
+          <ScalarProperty Name="ANT_FUMA" ColumnName="ANT_FUMA" />
+          <ScalarProperty Name="ANT_TOMA" ColumnName="ANT_TOMA" />
+          <ScalarProperty Name="ANT_DROGA" ColumnName="ANT_DROGA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_NEUROPSICOLOGICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_NEUROPSICOLOGICO)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_NEUROPSICOLOGICO">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="NEU_CONDUCTACASA" ColumnName="NEU_CONDUCTACASA" />
+          <ScalarProperty Name="NEU_CCASAEDAD" ColumnName="NEU_CCASAEDAD" />
+          <ScalarProperty Name="NEU_CONDUCTAESCUELA" ColumnName="NEU_CONDUCTAESCUELA" />
+          <ScalarProperty Name="NEU_CESCUELAEDAD" ColumnName="NEU_CESCUELAEDAD" />
+          <ScalarProperty Name="NEU_APROVECHAMIENTO" ColumnName="NEU_APROVECHAMIENTO" />
+          <ScalarProperty Name="NEU_AEDAD" ColumnName="NEU_AEDAD" />
+          <ScalarProperty Name="NEU_PIERDEEQUILIBRIO" ColumnName="NEU_PIERDEEQUILIBRIO" />
+          <ScalarProperty Name="NEU_EQUILIBRIOEDAD" ColumnName="NEU_EQUILIBRIOEDAD" />
+          <ScalarProperty Name="NEU_DHABLAR" ColumnName="NEU_DHABLAR" />
+          <ScalarProperty Name="NEU_DHEDAD" ColumnName="NEU_DHEDAD" />
+          <ScalarProperty Name="NEU_CSUENO" ColumnName="NEU_CSUENO" />
+          <ScalarProperty Name="NEU_CSUENOEDAD" ColumnName="NEU_CSUENOEDAD" />
+          <ScalarProperty Name="NEU_DNOCHE" ColumnName="NEU_DNOCHE" />
+          <ScalarProperty Name="NEU_DNOCHEEDAD" ColumnName="NEU_DNOCHEEDAD" />
+          <ScalarProperty Name="NEU_DESMAYO" ColumnName="NEU_DESMAYO" />
+          <ScalarProperty Name="NEU_DESMAYOEDAD" ColumnName="NEU_DESMAYOEDAD" />
+          <ScalarProperty Name="NEU_VE" ColumnName="NEU_VE" />
+          <ScalarProperty Name="NEU_VEEDAD" ColumnName="NEU_VEEDAD" />
+          <ScalarProperty Name="NEU_OYE" ColumnName="NEU_OYE" />
+          <ScalarProperty Name="NEU_OYEEDAD" ColumnName="NEU_OYEEDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_NUTRICIONAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_NUTRICIONAL)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_NUTRICIONAL">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_NUT_PESO" ColumnName="ANT_NUT_PESO" />
+          <ScalarProperty Name="ANT_NUT_ESTATURA" ColumnName="ANT_NUT_ESTATURA" />
+          <ScalarProperty Name="ANT_NUT_IMC" ColumnName="ANT_NUT_IMC" />
+          <ScalarProperty Name="ANT_NUT_COMSOLIEDAD" ColumnName="ANT_NUT_COMSOLIEDAD" />
+          <ScalarProperty Name="ANT_NUT_TIPO_COMIDA" ColumnName="ANT_NUT_TIPO_COMIDA" />
+          <ScalarProperty Name="ANT_NUT_DIETA_ESPECIAL" ColumnName="ANT_NUT_DIETA_ESPECIAL" />
+          <ScalarProperty Name="ANT_NUT_TIPO_DIETA" ColumnName="ANT_NUT_TIPO_DIETA" />
+          <ScalarProperty Name="ANT_NUT_COMIDA" ColumnName="ANT_NUT_COMIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_ODONTO_FAMILIAR">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_ODONTO_FAMILIAR)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_ODONTO_FAMILIAR">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ALERGIAANTIBIOTICO" ColumnName="ALERGIAANTIBIOTICO" />
+          <ScalarProperty Name="ALERGIAANESTECIA" ColumnName="ALERGIAANESTECIA" />
+          <ScalarProperty Name="HEMORRAGIAS" ColumnName="HEMORRAGIAS" />
+          <ScalarProperty Name="VIH" ColumnName="VIH" />
+          <ScalarProperty Name="TUBERCULOSIS" ColumnName="TUBERCULOSIS" />
+          <ScalarProperty Name="ASMA" ColumnName="ASMA" />
+          <ScalarProperty Name="DIABETES" ColumnName="DIABETES" />
+          <ScalarProperty Name="HIPERTENCION" ColumnName="HIPERTENCION" />
+          <ScalarProperty Name="ENFCARDIACA" ColumnName="ENFCARDIACA" />
+          <ScalarProperty Name="ESPECIFIQUE" ColumnName="ESPECIFIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_PERINATAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_PERINATAL)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_PERINATAL">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_NUMERO_EMBARAZO" ColumnName="ANT_NUMERO_EMBARAZO" />
+          <ScalarProperty Name="ANT_EMBARAZO_MULTIPLE" ColumnName="ANT_EMBARAZO_MULTIPLE" />
+          <ScalarProperty Name="ANT_TOMA_MEDICAMENTOS" ColumnName="ANT_TOMA_MEDICAMENTOS" />
+          <ScalarProperty Name="ANT_QUE_MEDICAMENTOS" ColumnName="ANT_QUE_MEDICAMENTOS" />
+          <ScalarProperty Name="ANT_TOMA_VITAMINAS" ColumnName="ANT_TOMA_VITAMINAS" />
+          <ScalarProperty Name="ANT_QUE_VITAMINAS" ColumnName="ANT_QUE_VITAMINAS" />
+          <ScalarProperty Name="ANT_DURACION_EMBARAZO" ColumnName="ANT_DURACION_EMBARAZO" />
+          <ScalarProperty Name="ANT_FUMO_TOMO" ColumnName="ANT_FUMO_TOMO" />
+          <ScalarProperty Name="ANT_PARTO_NORMAL" ColumnName="ANT_PARTO_NORMAL" />
+          <ScalarProperty Name="ANT_OBSERVACION_PARTO" ColumnName="ANT_OBSERVACION_PARTO" />
+          <ScalarProperty Name="ANT_PESO" ColumnName="ANT_PESO" />
+          <ScalarProperty Name="ANT_TALLA" ColumnName="ANT_TALLA" />
+          <ScalarProperty Name="ANT_PERIMETRO_CEFALICO" ColumnName="ANT_PERIMETRO_CEFALICO" />
+          <ScalarProperty Name="ANT_TAMIZ_METABOLICO" ColumnName="ANT_TAMIZ_METABOLICO" />
+          <ScalarProperty Name="ANT_TAMIZ_AUDITIVO" ColumnName="ANT_TAMIZ_AUDITIVO" />
+          <ScalarProperty Name="ANT_PARTO_COMPLICACION" ColumnName="ANT_PARTO_COMPLICACION" />
+          <ScalarProperty Name="ANT_OBSERVACION_COMP_PARTO" ColumnName="ANT_OBSERVACION_COMP_PARTO" />
+          <ScalarProperty Name="ANT_TOMO_SENO_MATERNO" ColumnName="ANT_TOMO_SENO_MATERNO" />
+          <ScalarProperty Name="ANT_TIEMPO_SENO" ColumnName="ANT_TIEMPO_SENO" />
+          <ScalarProperty Name="ANT_TOMO_FORMULA" ColumnName="ANT_TOMO_FORMULA" />
+          <ScalarProperty Name="ANT_QUE_FORMULA" ColumnName="ANT_QUE_FORMULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANTECEDENTE_QUIRURGICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ANTECEDENTE_QUIRURGICO)">
+        <MappingFragment StoreEntitySet="ANTECEDENTE_QUIRURGICO">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ANT_QUIREFLUJO" ColumnName="ANT_QUIREFLUJO" />
+          <ScalarProperty Name="ANT_QUITIROIDEAS" ColumnName="ANT_QUITIROIDEAS" />
+          <ScalarProperty Name="ANT_QUIESTRENIMIENTO" ColumnName="ANT_QUIESTRENIMIENTO" />
+          <ScalarProperty Name="ANT_QUIDIARREA" ColumnName="ANT_QUIDIARREA" />
+          <ScalarProperty Name="ANT_QUINEUMONIA" ColumnName="ANT_QUINEUMONIA" />
+          <ScalarProperty Name="ANT_QUIBRONQUIOLITIS" ColumnName="ANT_QUIBRONQUIOLITIS" />
+          <ScalarProperty Name="ANT_QUICRUP" ColumnName="ANT_QUICRUP" />
+          <ScalarProperty Name="ANT_QUIINFEVISURINARIAS" ColumnName="ANT_QUIINFEVISURINARIAS" />
+          <ScalarProperty Name="ANT_QUIVARICELA" ColumnName="ANT_QUIVARICELA" />
+          <ScalarProperty Name="ANT_QUIESCARLATINA" ColumnName="ANT_QUIESCARLATINA" />
+          <ScalarProperty Name="ANT_QUIDOLORCABEZA" ColumnName="ANT_QUIDOLORCABEZA" />
+          <ScalarProperty Name="ANT_QUINERVIOCISMO" ColumnName="ANT_QUINERVIOCISMO" />
+          <ScalarProperty Name="ANT_QUICONVULCIONES" ColumnName="ANT_QUICONVULCIONES" />
+          <ScalarProperty Name="ANT_QUITRANSFUCIONES" ColumnName="ANT_QUITRANSFUCIONES" />
+          <ScalarProperty Name="ANT_QUIALERGIAS" ColumnName="ANT_QUIALERGIAS" />
+          <ScalarProperty Name="ANT_QUIFRACTURAS" ColumnName="ANT_QUIFRACTURAS" />
+          <ScalarProperty Name="ANT_QUIACCIDENTES" ColumnName="ANT_QUIACCIDENTES" />
+          <ScalarProperty Name="ANT_QUICANCER" ColumnName="ANT_QUICANCER" />
+          <ScalarProperty Name="ANT_HOSPITALIZACION" ColumnName="ANT_HOSPITALIZACION" />
+          <ScalarProperty Name="CIRUGIAS" ColumnName="CIRUGIAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRIGADA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.BRIGADA)">
+        <MappingFragment StoreEntitySet="BRIGADA">
+          <ScalarProperty Name="BRI_ID" ColumnName="BRI_ID" />
+          <ScalarProperty Name="BRI_NOMBRE" ColumnName="BRI_NOMBRE" />
+          <ScalarProperty Name="BRI_DIRECCION" ColumnName="BRI_DIRECCION" />
+          <ScalarProperty Name="BRI_TELEFONO" ColumnName="BRI_TELEFONO" />
+          <ScalarProperty Name="BRI_CORREO" ColumnName="BRI_CORREO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONSENTIMIENTO_INFORMADO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.CONSENTIMIENTO_INFORMADO)">
+        <MappingFragment StoreEntitySet="CONSENTIMIENTO_INFORMADO">
+          <ScalarProperty Name="ID_CONS_INFORMADO" ColumnName="ID_CONS_INFORMADO" />
+          <ScalarProperty Name="CONS_NOMBRE_INSTITUCION" ColumnName="CONS_NOMBRE_INSTITUCION" />
+          <ScalarProperty Name="CONS_NOMBRE_RESPONSABLE" ColumnName="CONS_NOMBRE_RESPONSABLE" />
+          <ScalarProperty Name="CONS_TELEFONO_RESPONSABLE" ColumnName="CONS_TELEFONO_RESPONSABLE" />
+          <ScalarProperty Name="CONS_EMAIL_RESPONSABLE" ColumnName="CONS_EMAIL_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONSULTA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.CONSULTA)">
+        <MappingFragment StoreEntitySet="CONSULTA">
+          <ScalarProperty Name="CONS_ID" ColumnName="CONS_ID" />
+          <ScalarProperty Name="CONS_FECHA" ColumnName="CONS_FECHA" />
+          <ScalarProperty Name="CONS_MOTIVO" ColumnName="CONS_MOTIVO" />
+          <ScalarProperty Name="CONS_DIAGNOSTICO" ColumnName="CONS_DIAGNOSTICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DESARROLLO_PSICOMOTOR">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.DESARROLLO_PSICOMOTOR)">
+        <MappingFragment StoreEntitySet="DESARROLLO_PSICOMOTOR">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="PSI_SOSTUVO_CABEZA" ColumnName="PSI_SOSTUVO_CABEZA" />
+          <ScalarProperty Name="PSI_SONRIO" ColumnName="PSI_SONRIO" />
+          <ScalarProperty Name="PSI_BALBUCEO" ColumnName="PSI_BALBUCEO" />
+          <ScalarProperty Name="PSI_SENTO" ColumnName="PSI_SENTO" />
+          <ScalarProperty Name="PSI_GATEO" ColumnName="PSI_GATEO" />
+          <ScalarProperty Name="PSI_CAMINO_AYUDA" ColumnName="PSI_CAMINO_AYUDA" />
+          <ScalarProperty Name="PSI_CAMINO_SOLO" ColumnName="PSI_CAMINO_SOLO" />
+          <ScalarProperty Name="PSI_DESEMPENHO_ESCOLAR" ColumnName="PSI_DESEMPENHO_ESCOLAR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIAGNOSTICO_BUCAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.DIAGNOSTICO_BUCAL)">
+        <MappingFragment StoreEntitySet="DIAGNOSTICO_BUCAL">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ID_DIAGNOSTICO" ColumnName="ID_DIAGNOSTICO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CIE" ColumnName="CIE" />
+          <ScalarProperty Name="PRE" ColumnName="PRE" />
+          <ScalarProperty Name="DEF" ColumnName="DEF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESPECIALIDAD">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ESPECIALIDAD)">
+        <MappingFragment StoreEntitySet="ESPECIALIDAD">
+          <ScalarProperty Name="TCON_ID" ColumnName="TCON_ID" />
+          <ScalarProperty Name="TCON_NOMBRE" ColumnName="TCON_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXA_SYS_ESTOMATOGMATICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.EXA_SYS_ESTOMATOGMATICO)">
+        <MappingFragment StoreEntitySet="EXA_SYS_ESTOMATOGMATICO">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="LABIOS" ColumnName="LABIOS" />
+          <ScalarProperty Name="MEJILLAS" ColumnName="MEJILLAS" />
+          <ScalarProperty Name="MAXILAR_SUPERIOR" ColumnName="MAXILAR_SUPERIOR" />
+          <ScalarProperty Name="MAXILAR_INFERIOR" ColumnName="MAXILAR_INFERIOR" />
+          <ScalarProperty Name="LENGUA" ColumnName="LENGUA" />
+          <ScalarProperty Name="PALADAR" ColumnName="PALADAR" />
+          <ScalarProperty Name="PISO" ColumnName="PISO" />
+          <ScalarProperty Name="CARRILLOS" ColumnName="CARRILLOS" />
+          <ScalarProperty Name="GLANDULAS_SALIVALES" ColumnName="GLANDULAS_SALIVALES" />
+          <ScalarProperty Name="ORO_FARINGE" ColumnName="ORO_FARINGE" />
+          <ScalarProperty Name="ATM" ColumnName="ATM" />
+          <ScalarProperty Name="GANGLIOS" ColumnName="GANGLIOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXPLORACION_FISICA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.EXPLORACION_FISICA)">
+        <MappingFragment StoreEntitySet="EXPLORACION_FISICA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="EXPFIS_TA" ColumnName="EXPFIS_TA" />
+          <ScalarProperty Name="EXPFIS_TEMPERATURA" ColumnName="EXPFIS_TEMPERATURA" />
+          <ScalarProperty Name="EXPFIS_FRECUENCARD" ColumnName="EXPFIS_FRECUENCARD" />
+          <ScalarProperty Name="EXPFIS_PULSO" ColumnName="EXPFIS_PULSO" />
+          <ScalarProperty Name="EXPFIS_RESPIRATORIA" ColumnName="EXPFIS_RESPIRATORIA" />
+          <ScalarProperty Name="EXPFIS_CABEZA" ColumnName="EXPFIS_CABEZA" />
+          <ScalarProperty Name="EXPFIS_CUELLO" ColumnName="EXPFIS_CUELLO" />
+          <ScalarProperty Name="EXPFIS_TORAX" ColumnName="EXPFIS_TORAX" />
+          <ScalarProperty Name="EXPFIS_ABDOMEN" ColumnName="EXPFIS_ABDOMEN" />
+          <ScalarProperty Name="EXPFIS_GENITALES" ColumnName="EXPFIS_GENITALES" />
+          <ScalarProperty Name="EXPFIS_NEUROLOGICO" ColumnName="EXPFIS_NEUROLOGICO" />
+          <ScalarProperty Name="EXPFIS_EXAMENRECTAL" ColumnName="EXPFIS_EXAMENRECTAL" />
+          <ScalarProperty Name="EXPFIS_PELVICO" ColumnName="EXPFIS_PELVICO" />
+          <ScalarProperty Name="EXPFIS_EXTREMIDADES" ColumnName="EXPFIS_EXTREMIDADES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FICHA_MEDICA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.FICHA_MEDICA)">
+        <MappingFragment StoreEntitySet="FICHA_MEDICA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FICHA_ODONTOLOGICA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.FICHA_ODONTOLOGICA)">
+        <MappingFragment StoreEntitySet="FICHA_ODONTOLOGICA">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="PERSONAINFOADICIONAL" ColumnName="PERSONAINFOADICIONAL" />
+          <ScalarProperty Name="MOTIVOCONSULTA" ColumnName="MOTIVOCONSULTA" />
+          <ScalarProperty Name="ENFERMEDADACTUAL" ColumnName="ENFERMEDADACTUAL" />
+          <ScalarProperty Name="EMBARAZO" ColumnName="EMBARAZO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FRECUENCIA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.FRECUENCIA)">
+        <MappingFragment StoreEntitySet="FRECUENCIA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="FRUTAS" ColumnName="FRUTAS" />
+          <ScalarProperty Name="VERDURAS" ColumnName="VERDURAS" />
+          <ScalarProperty Name="LECHEENTERA" ColumnName="LECHEENTERA" />
+          <ScalarProperty Name="LECHEDESLACTOSADA" ColumnName="LECHEDESLACTOSADA" />
+          <ScalarProperty Name="YOGURT" ColumnName="YOGURT" />
+          <ScalarProperty Name="YOGURTFRUTAS" ColumnName="YOGURTFRUTAS" />
+          <ScalarProperty Name="QUESO" ColumnName="QUESO" />
+          <ScalarProperty Name="QUESOA" ColumnName="QUESOA" />
+          <ScalarProperty Name="EMBUTIDOS" ColumnName="EMBUTIDOS" />
+          <ScalarProperty Name="HUEVO" ColumnName="HUEVO" />
+          <ScalarProperty Name="POLLO" ColumnName="POLLO" />
+          <ScalarProperty Name="RES" ColumnName="RES" />
+          <ScalarProperty Name="CERDO" ColumnName="CERDO" />
+          <ScalarProperty Name="MARISCOS" ColumnName="MARISCOS" />
+          <ScalarProperty Name="VISCERAS" ColumnName="VISCERAS" />
+          <ScalarProperty Name="LEGUMINOSAS" ColumnName="LEGUMINOSAS" />
+          <ScalarProperty Name="AGUA" ColumnName="AGUA" />
+          <ScalarProperty Name="BEBIDASA" ColumnName="BEBIDASA" />
+          <ScalarProperty Name="SNACKD" ColumnName="SNACKD" />
+          <ScalarProperty Name="SNACKS" ColumnName="SNACKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIAL_FICHA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIAL_FICHA)">
+        <MappingFragment StoreEntitySet="HISTORIAL_FICHA">
+          <ScalarProperty Name="ID_HISTORIAL" ColumnName="ID_HISTORIAL" />
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="FIC_MED_FECHA" ColumnName="FIC_MED_FECHA" />
+          <ScalarProperty Name="FICHAEXAMENLAVOR" ColumnName="FICHAEXAMENLAVOR" />
+          <ScalarProperty Name="FICHATERAPEUTA" ColumnName="FICHATERAPEUTA" />
+          <ScalarProperty Name="FICHADIAGNOSTICO" ColumnName="FICHADIAGNOSTICO" />
+          <ScalarProperty Name="FICHACOMENTARIO" ColumnName="FICHACOMENTARIO" />
+          <ScalarProperty Name="FICHACOMENTMEDICO" ColumnName="FICHACOMENTMEDICO" />
+          <ScalarProperty Name="FICHAPADECIMIENTOACT" ColumnName="FICHAPADECIMIENTOACT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIALFICHAODO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIALFICHAODO)">
+        <MappingFragment StoreEntitySet="HISTORIALFICHAODO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIALFICHASCEE">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIALFICHASCEE)">
+        <MappingFragment StoreEntitySet="HISTORIALFICHASCEE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIALUSUARIOS">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HISTORIALUSUARIOS)">
+        <MappingFragment StoreEntitySet="HISTORIALUSUARIOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HORARIO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.HORARIO)">
+        <MappingFragment StoreEntitySet="HORARIO">
+          <ScalarProperty Name="HORA_ID" ColumnName="HORA_ID" />
+          <ScalarProperty Name="HORA_DIAS" ColumnName="HORA_DIAS" />
+          <ScalarProperty Name="HORA_INGRESO" ColumnName="HORA_INGRESO" />
+          <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INDICADORES_SALUDB">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.INDICADORES_SALUDB)">
+        <MappingFragment StoreEntitySet="INDICADORES_SALUDB">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="PD_16" ColumnName="PD_16" />
+          <ScalarProperty Name="PD_17" ColumnName="PD_17" />
+          <ScalarProperty Name="PD_55" ColumnName="PD_55" />
+          <ScalarProperty Name="PD_11" ColumnName="PD_11" />
+          <ScalarProperty Name="PD_21" ColumnName="PD_21" />
+          <ScalarProperty Name="PD_51" ColumnName="PD_51" />
+          <ScalarProperty Name="PD_26" ColumnName="PD_26" />
+          <ScalarProperty Name="PD_27" ColumnName="PD_27" />
+          <ScalarProperty Name="PD_65" ColumnName="PD_65" />
+          <ScalarProperty Name="PD_36" ColumnName="PD_36" />
+          <ScalarProperty Name="PD_37" ColumnName="PD_37" />
+          <ScalarProperty Name="PD_75" ColumnName="PD_75" />
+          <ScalarProperty Name="PD_31" ColumnName="PD_31" />
+          <ScalarProperty Name="PD_41" ColumnName="PD_41" />
+          <ScalarProperty Name="PD_71" ColumnName="PD_71" />
+          <ScalarProperty Name="PD_46" ColumnName="PD_46" />
+          <ScalarProperty Name="PD_47" ColumnName="PD_47" />
+          <ScalarProperty Name="PD_85" ColumnName="PD_85" />
+          <ScalarProperty Name="PLACA16_55" ColumnName="PLACA16_55" />
+          <ScalarProperty Name="PLACA11_51" ColumnName="PLACA11_51" />
+          <ScalarProperty Name="PLACA26_65" ColumnName="PLACA26_65" />
+          <ScalarProperty Name="PLACA36_75" ColumnName="PLACA36_75" />
+          <ScalarProperty Name="PLACA31_71" ColumnName="PLACA31_71" />
+          <ScalarProperty Name="PLACA46_85" ColumnName="PLACA46_85" />
+          <ScalarProperty Name="CALDULO16_55" ColumnName="CALDULO16_55" />
+          <ScalarProperty Name="CALCULO11_51" ColumnName="CALCULO11_51" />
+          <ScalarProperty Name="CALCULO26_65" ColumnName="CALCULO26_65" />
+          <ScalarProperty Name="CALCULO36_75" ColumnName="CALCULO36_75" />
+          <ScalarProperty Name="CALCULO31_71" ColumnName="CALCULO31_71" />
+          <ScalarProperty Name="CALCULO46_85" ColumnName="CALCULO46_85" />
+          <ScalarProperty Name="GINGIVITIS16_55" ColumnName="GINGIVITIS16_55" />
+          <ScalarProperty Name="GINGIVITIS11_55" ColumnName="GINGIVITIS11_55" />
+          <ScalarProperty Name="GINGIVITIS26_65" ColumnName="GINGIVITIS26_65" />
+          <ScalarProperty Name="GINGIVITIS36_75" ColumnName="GINGIVITIS36_75" />
+          <ScalarProperty Name="GINGIVITIS31_71" ColumnName="GINGIVITIS31_71" />
+          <ScalarProperty Name="GINGIVITIS46_85" ColumnName="GINGIVITIS46_85" />
+          <ScalarProperty Name="TOTALPLACA" ColumnName="TOTALPLACA" />
+          <ScalarProperty Name="TOTALCALCULO" ColumnName="TOTALCALCULO" />
+          <ScalarProperty Name="TOTALGINGIVITIS" ColumnName="TOTALGINGIVITIS" />
+          <ScalarProperty Name="ENF_PERIDONTAL" ColumnName="ENF_PERIDONTAL" />
+          <ScalarProperty Name="MAL_OCLUSION" ColumnName="MAL_OCLUSION" />
+          <ScalarProperty Name="FLOUROSIS" ColumnName="FLOUROSIS" />
+          <ScalarProperty Name="DC" ColumnName="DC" />
+          <ScalarProperty Name="DP" ColumnName="DP" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="E" ColumnName="E" />
+          <ScalarProperty Name="O" ColumnName="O" />
+          <ScalarProperty Name="TOTALCPO" ColumnName="TOTALCPO" />
+          <ScalarProperty Name="TOTALCEO" ColumnName="TOTALCEO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INT_APARATO_SISTEMA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.INT_APARATO_SISTEMA)">
+        <MappingFragment StoreEntitySet="INT_APARATO_SISTEMA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="APA_DIGESTIVO" ColumnName="APA_DIGESTIVO" />
+          <ScalarProperty Name="APA_DIGESTIVOESPECF" ColumnName="APA_DIGESTIVOESPECF" />
+          <ScalarProperty Name="APA_CARDIOVASCULAR" ColumnName="APA_CARDIOVASCULAR" />
+          <ScalarProperty Name="APA_CARDIOESPECIF" ColumnName="APA_CARDIOESPECIF" />
+          <ScalarProperty Name="APA_PULMONAR" ColumnName="APA_PULMONAR" />
+          <ScalarProperty Name="APA_PULMONARESPECIF" ColumnName="APA_PULMONARESPECIF" />
+          <ScalarProperty Name="APA_ENDOCRINO" ColumnName="APA_ENDOCRINO" />
+          <ScalarProperty Name="APA_ENDOCRINOESPECIF" ColumnName="APA_ENDOCRINOESPECIF" />
+          <ScalarProperty Name="APA_URINARIO" ColumnName="APA_URINARIO" />
+          <ScalarProperty Name="APA_URINARIOESPECIF" ColumnName="APA_URINARIOESPECIF" />
+          <ScalarProperty Name="APA_GENITAL" ColumnName="APA_GENITAL" />
+          <ScalarProperty Name="APA_GENITALESPECIF" ColumnName="APA_GENITALESPECIF" />
+          <ScalarProperty Name="APA_GINECOLOMENARCA" ColumnName="APA_GINECOLOMENARCA" />
+          <ScalarProperty Name="APA_GINECOLOFUM" ColumnName="APA_GINECOLOFUM" />
+          <ScalarProperty Name="APA_GINECOLORITMO" ColumnName="APA_GINECOLORITMO" />
+          <ScalarProperty Name="APA_GINECOLOESPECIF" ColumnName="APA_GINECOLOESPECIF" />
+          <ScalarProperty Name="APA_MUSCOESQUELATICO" ColumnName="APA_MUSCOESQUELATICO" />
+          <ScalarProperty Name="APA_MESQUELEESPECIF" ColumnName="APA_MESQUELEESPECIF" />
+          <ScalarProperty Name="APA_NERVIOSO" ColumnName="APA_NERVIOSO" />
+          <ScalarProperty Name="APA_NERVIOSOESPECIF" ColumnName="APA_NERVIOSOESPECIF" />
+          <ScalarProperty Name="APA_PSIQUIATRICO" ColumnName="APA_PSIQUIATRICO" />
+          <ScalarProperty Name="APA_PSIQUIATRICOESPECIF" ColumnName="APA_PSIQUIATRICOESPECIF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.MEDICO)">
+        <MappingFragment StoreEntitySet="MEDICO">
+          <ScalarProperty Name="MED_ID" ColumnName="MED_ID" />
+          <ScalarProperty Name="HORA_ID" ColumnName="HORA_ID" />
+          <ScalarProperty Name="TCON_ID" ColumnName="TCON_ID" />
+          <ScalarProperty Name="MED_NOMBRE" ColumnName="MED_NOMBRE" />
+          <ScalarProperty Name="MED_APELLIDO" ColumnName="MED_APELLIDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ODONTOGRAMA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.ODONTOGRAMA)">
+        <MappingFragment StoreEntitySet="ODONTOGRAMA">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="IDDIENTE" ColumnName="IDDIENTE" />
+          <ScalarProperty Name="NDIENTE" ColumnName="NDIENTE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ENFERMEDAD" ColumnName="ENFERMEDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.PERSONA)">
+        <MappingFragment StoreEntitySet="PERSONA">
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="PER_APELLIDO_PATERNO" ColumnName="PER_APELLIDO_PATERNO" />
+          <ScalarProperty Name="PER_APELLIDO_MATERNO" ColumnName="PER_APELLIDO_MATERNO" />
+          <ScalarProperty Name="PER_NOMBRES" ColumnName="PER_NOMBRES" />
+          <ScalarProperty Name="PER_EDAD" ColumnName="PER_EDAD" />
+          <ScalarProperty Name="PER_SEXO" ColumnName="PER_SEXO" />
+          <ScalarProperty Name="PER_RELIGION" ColumnName="PER_RELIGION" />
+          <ScalarProperty Name="PER_MEDICO_TRATANTE" ColumnName="PER_MEDICO_TRATANTE" />
+          <ScalarProperty Name="PER_NOMBRE_MADRE" ColumnName="PER_NOMBRE_MADRE" />
+          <ScalarProperty Name="EDAD_MADRE" ColumnName="EDAD_MADRE" />
+          <ScalarProperty Name="PER_NOMBRE_PADRE" ColumnName="PER_NOMBRE_PADRE" />
+          <ScalarProperty Name="PER_EDAD_PADRE" ColumnName="PER_EDAD_PADRE" />
+          <ScalarProperty Name="PER_CEDULA" ColumnName="PER_CEDULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLANES_DIAGNOSTICO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.PLANES_DIAGNOSTICO)">
+        <MappingFragment StoreEntitySet="PLANES_DIAGNOSTICO">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="BIOMETRIA" ColumnName="BIOMETRIA" />
+          <ScalarProperty Name="QUIMICA_SANGUINEA" ColumnName="QUIMICA_SANGUINEA" />
+          <ScalarProperty Name="RAYOS_X" ColumnName="RAYOS_X" />
+          <ScalarProperty Name="ESPECIFIQUE" ColumnName="ESPECIFIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGNOS_VITALES">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.SIGNOS_VITALES)">
+        <MappingFragment StoreEntitySet="SIGNOS_VITALES">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="PRESION_ARTERIAL" ColumnName="PRESION_ARTERIAL" />
+          <ScalarProperty Name="FRECUENCIA_CARDIACA" ColumnName="FRECUENCIA_CARDIACA" />
+          <ScalarProperty Name="TEMPERATURA" ColumnName="TEMPERATURA" />
+          <ScalarProperty Name="F_RESPIRATORIA" ColumnName="F_RESPIRATORIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_CONSULTA_ESPECIALIDAD">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.TIPO_CONSULTA_ESPECIALIDAD)">
+        <MappingFragment StoreEntitySet="TIPO_CONSULTA_ESPECIALIDAD">
+          <ScalarProperty Name="TCON_ID" ColumnName="TCON_ID" />
+          <ScalarProperty Name="TCON_NOMBRE" ColumnName="TCON_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRATAMIENTO">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.TRATAMIENTO)">
+        <MappingFragment StoreEntitySet="TRATAMIENTO">
+          <ScalarProperty Name="ID_ODONTO" ColumnName="ID_ODONTO" />
+          <ScalarProperty Name="ID_SECION" ColumnName="ID_SECION" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="DIAGNOSTICO" ColumnName="DIAGNOSTICO" />
+          <ScalarProperty Name="PROCEDIMIENTOS" ColumnName="PROCEDIMIENTOS" />
+          <ScalarProperty Name="PRESCRIPCIONESA" ColumnName="PRESCRIPCIONESA" />
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="FIRMA" ColumnName="FIRMA" />
+          <ScalarProperty Name="ZONA" ColumnName="ZONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO_SIS">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.USUARIO_SIS)">
+        <MappingFragment StoreEntitySet="USUARIO_SIS">
+          <ScalarProperty Name="USR_ID" ColumnName="USR_ID" />
+          <ScalarProperty Name="USR_SECONDNAME" ColumnName="USR_SECONDNAME" />
+          <ScalarProperty Name="USR_APELLIDOP" ColumnName="USR_APELLIDOP" />
+          <ScalarProperty Name="USR_APELLIDOM" ColumnName="USR_APELLIDOM" />
+          <ScalarProperty Name="USR_CEDULA" ColumnName="USR_CEDULA" />
+          <ScalarProperty Name="USR_FIRSTNAME" ColumnName="USR_FIRSTNAME" />
+          <ScalarProperty Name="USR_ROLES" ColumnName="USR_ROLES" />
+          <ScalarProperty Name="USR_CONTRASENA" ColumnName="USR_CONTRASENA" />
+          <ScalarProperty Name="USR_ESTADO" ColumnName="USR_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VACUNA">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.VACUNA)">
+        <MappingFragment StoreEntitySet="VACUNA">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="VAC_TUBERCULOSIS" ColumnName="VAC_TUBERCULOSIS" />
+          <ScalarProperty Name="VAC_POLIO" ColumnName="VAC_POLIO" />
+          <ScalarProperty Name="VAC_POLIOCUANTAS" ColumnName="VAC_POLIOCUANTAS" />
+          <ScalarProperty Name="VAC_PENTAVALENTE" ColumnName="VAC_PENTAVALENTE" />
+          <ScalarProperty Name="VAC_PENTAVALENTECUANTAS" ColumnName="VAC_PENTAVALENTECUANTAS" />
+          <ScalarProperty Name="VAC_TRIPLEVIRAL" ColumnName="VAC_TRIPLEVIRAL" />
+          <ScalarProperty Name="VAC_TRIPLEVIRALCUANTAS" ColumnName="VAC_TRIPLEVIRALCUANTAS" />
+          <ScalarProperty Name="VAC_VARICELA" ColumnName="VAC_VARICELA" />
+          <ScalarProperty Name="VAC_NEUMOCOCOS" ColumnName="VAC_NEUMOCOCOS" />
+          <ScalarProperty Name="VAC_HEPATITIS" ColumnName="VAC_HEPATITIS" />
+          <ScalarProperty Name="VAC_INFLUENZA" ColumnName="VAC_INFLUENZA" />
+          <ScalarProperty Name="VAC_ROTAVIRUS" ColumnName="VAC_ROTAVIRUS" />
+          <ScalarProperty Name="VAC_OTRAS" ColumnName="VAC_OTRAS" />
+          <ScalarProperty Name="VAC_OTRASESPECIFIQUE" ColumnName="VAC_OTRASESPECIFIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VALORACION_FUNCIONAL">
+      <EntityTypeMapping TypeName="IsTypeOf(JuntosPorUnaSonrisaModel.VALORACION_FUNCIONAL)">
+        <MappingFragment StoreEntitySet="VALORACION_FUNCIONAL">
+          <ScalarProperty Name="ID_FICHA_MEDICA" ColumnName="ID_FICHA_MEDICA" />
+          <ScalarProperty Name="VAL_APOYO_ESPECIAL" ColumnName="VAL_APOYO_ESPECIAL" />
+          <ScalarProperty Name="VAL_AUDITIVO" ColumnName="VAL_AUDITIVO" />
+          <ScalarProperty Name="VAL_MOTOR" ColumnName="VAL_MOTOR" />
+          <ScalarProperty Name="VAL_VISUAL" ColumnName="VAL_VISUAL" />
+          <ScalarProperty Name="VAL_IDIOMA" ColumnName="VAL_IDIOMA" />
+          <ScalarProperty Name="VAL_OTRO" ColumnName="VAL_OTRO" />
+          <ScalarProperty Name="VAL_ESPECIFICACION" ColumnName="VAL_ESPECIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

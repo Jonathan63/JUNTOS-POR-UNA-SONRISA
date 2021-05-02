@@ -1,0 +1,82 @@
+﻿@model IEnumerable<JuntosPorUnaSonrisa.Models.HISTORIAL_FICHA>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ficha</title>
+    <title>GetAll</title>
+</head>
+<body>
+    <form id="FormularioMedicina" runant="server">
+        <div class="MargenA4" style="border-color:black; border-style:solid">
+            <br />
+            <div class="row form-inline" style="border-color:black; border-style:solid;">
+
+
+                <img class="MargenDiv" style="margin-left:25px; margin-right:25px; Height:50px; Width:200px; " src="~/Imagenes/LogoActualizado.png" />
+                <label style="border-left-style:solid; height:50px"></label>
+                <label class="MargenDiv" style="margin-left:25px; Height:50px">Univercidad Catolica de Cuenca</label>
+
+            </div>
+            <br />
+            <div class="row MargenDiv form-inline btn-warning">
+                <!--      --------------ID Persona----------------             -->
+                <div class="col-sm ">
+                    <div class="row form-group style=" border-color:black; border-style:solid"">
+                        <Label class="col-sm text-center">Nº de Ficha Medica</Label>
+                        <Label class="form-control text-center">@ViewBag.Ficha </Label>
+                        <Label class="col-sm text-center ">Cedula: </Label>
+                        <label class="form-control text-center">@ViewBag.Cedula</label>
+
+
+                    </div>
+                    <div class="row form-group">
+
+                        <asp:Label CssClass="col-sm text-center">Nombres: </asp:Label>
+                        <asp:Label CssClass="col-sm text-center">@ViewBag.Nombres</asp:Label>
+
+
+                    </div>
+                </div>
+                <!--      --------------ID Persona----------------             -->
+                <div class="col-sm ">
+
+                </div>
+            </div>
+            <br />
+            <table class="table">
+                <tr>
+                    <th class="text-center" style="width:200px; text-align:center" >
+                        <label class="text-center">Fecha</label>
+                    <th>
+                        <label>Padecimiento Actual</label>
+                    </th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr class="text-center"  >
+                        <td style="width:200px" >
+                            @*@Html.DisplayFor(modelItem => item.FIC_MED_FECHA)*@
+                            <label>@Html.DisplayFor(modelItem => item.FIC_MED_FECHA)</label>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FICHAPADECIMIENTOACT)
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+
+
+    </form>
+</body>
+</html>

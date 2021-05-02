@@ -1,0 +1,71 @@
+﻿@model IEnumerable<JuntosPorUnaSonrisa.Models.HISTORIAL_FICHA>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetAll</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Print", "PrintAll")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FIC_MED_FECHA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FICHAEXAMENLAVOR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FICHATERAPEUTA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FICHADIAGNOSTICO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FICHACOMENTARIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FICHACOMENTMEDICO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FICHAPADECIMIENTOACT)
+            </th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FIC_MED_FECHA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FICHAEXAMENLAVOR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FICHATERAPEUTA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FICHADIAGNOSTICO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FICHACOMENTARIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FICHACOMENTMEDICO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FICHAPADECIMIENTOACT)
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

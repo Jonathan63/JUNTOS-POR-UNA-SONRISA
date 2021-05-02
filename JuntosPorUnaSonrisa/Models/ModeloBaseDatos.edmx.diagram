@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="828c53a1cf3c4c44ae7c746f01093d6f" Name="Diagram1">
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_FAMILIAR" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_NEUROPSICOLOGICO" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_NUTRICIONAL" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_ODONTO_FAMILIAR" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_PERINATAL" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ANTECEDENTE_QUIRURGICO" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.BRIGADA" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.CONSENTIMIENTO_INFORMADO" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.CONSULTA" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.DESARROLLO_PSICOMOTOR" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.DIAGNOSTICO_BUCAL" Width="1.5" PointX="8.75" PointY="7.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ESPECIALIDAD" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.EXA_SYS_ESTOMATOGMATICO" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.EXPLORACION_FISICA" Width="1.5" PointX="10.75" PointY="5.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.FICHA_MEDICA" Width="1.5" PointX="6.75" PointY="10.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.FICHA_ODONTOLOGICA" Width="1.5" PointX="8.75" PointY="10.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.FRECUENCIA" Width="1.5" PointX="10.75" PointY="10.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.HISTORIAL_FICHA" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.HISTORIALFICHAODO" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.HISTORIALFICHASCEE" Width="1.5" PointX="2.75" PointY="12.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.HISTORIALUSUARIOS" Width="1.5" PointX="12.75" PointY="4.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.HORARIO" Width="1.5" PointX="12.75" PointY="7.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.INDICADORES_SALUDB" Width="1.5" PointX="12.75" PointY="10.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.INT_APARATO_SISTEMA" Width="1.5" PointX="4.75" PointY="13.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.MEDICO" Width="1.5" PointX="6.75" PointY="13.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.ODONTOGRAMA" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.PERSONA" Width="1.5" PointX="14.75" PointY="3.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.PLANES_DIAGNOSTICO" Width="1.5" PointX="14.75" PointY="8.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.SIGNOS_VITALES" Width="1.5" PointX="14.75" PointY="11.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.sysdiagrams" Width="1.5" PointX="14.75" PointY="14.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.TIPO_CONSULTA_ESPECIALIDAD" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.TRATAMIENTO" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.USUARIO_SIS" Width="1.5" PointX="16.75" PointY="4.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.VACUNA" Width="1.5" PointX="6.75" PointY="16.75" />
+        <EntityTypeShape EntityType="JuntosPorUnaSonrisaModel.VALORACION_FUNCIONAL" Width="1.5" PointX="16.75" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
